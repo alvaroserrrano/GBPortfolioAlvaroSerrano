@@ -3,7 +3,7 @@ import React from "react"
 import classNames from "classnames"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
-
+import Tooltip from "@material-ui/core/Tooltip"
 // @material-ui/icons
 
 // React icons
@@ -68,22 +68,44 @@ class TeamSection extends React.Component {
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://github.com/alvaroserrrano/devConnector"
+                  <Tooltip
+                    id="Github"
+                    title="Code"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaGithub />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://dev-connector-alvaro-serrano.herokuapp.com/"
+                    <Button
+                      href="https://github.com/alvaroserrrano/devConnector"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaGithub />
+                    </Button>
+                  </Tooltip>
+                  <Tooltip
+                    id="Live"
+                    title="Live site"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaArchive />
-                  </Button>
+                    <Button
+                      href="https://dev-connector-alvaro-serrano.herokuapp.com/"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaArchive />
+                    </Button>
+                  </Tooltip>
                 </CardFooter>
               </Card>
             </GridItem>
@@ -107,30 +129,63 @@ class TeamSection extends React.Component {
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://github.com/alvaroserrrano/SocialMediaApp"
+                  <Tooltip
+                    id="Github"
+                    title="Server-side"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaGithub />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://github.com/alvaroserrrano/SocialApeClient"
+                    <Button
+                      href="https://github.com/alvaroserrrano/SocialMediaApp"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaGithub />
+                    </Button>
+                  </Tooltip>
+                  <Tooltip
+                    id="Github"
+                    title="Client side"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaGithub />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://socialape-44490.firebaseapp.com/"
+                    <Button
+                      href="https://socialape-44490.firebaseapp.com/"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaGithub />
+                    </Button>
+                  </Tooltip>
+                  <Tooltip
+                    id="Live"
+                    title="Live site"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaArchive />
-                  </Button>
+                    <Button
+                      href="https://github.com/alvaroserrrano/SocialApeClient"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaArchive />
+                    </Button>
+                  </Tooltip>
                 </CardFooter>
               </Card>
             </GridItem>
@@ -156,22 +211,45 @@ class TeamSection extends React.Component {
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://github.com/alvaroserrrano/CodeBlog"
+                  <Tooltip
+                    id="Github"
+                    title="Code"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaGithub />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                    href="https://codingblog-alvaro-serrano.netlify.com/"
+                    <Button
+                      href="https://github.com/alvaroserrrano/CodeBlog"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaGithub />
+                    </Button>
+                  </Tooltip>
+
+                  <Tooltip
+                    id="Live"
+                    title="Live site"
+                    placement={
+                      typeof window !== "undefined" && window.innerWidth > 959
+                        ? "top"
+                        : "left"
+                    }
+                    classes={{ tooltip: classes.tooltip }}
                   >
-                    <FaArchive />
-                  </Button>
+                    <Button
+                      href="https://codingblog-alvaro-serrano.netlify.com/"
+                      target="_blank"
+                      color="transparent"
+                      className={classes.navLink}
+                    >
+                      <FaArchive />
+                    </Button>
+                  </Tooltip>
                 </CardFooter>
               </Card>
             </GridItem>
