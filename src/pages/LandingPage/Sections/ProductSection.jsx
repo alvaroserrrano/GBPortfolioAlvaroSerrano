@@ -23,10 +23,13 @@ class ProductSection extends React.Component {
             <h2 className={classes.title}>Full Stack Web Developer</h2>
             <h5 className={classes.description}>
               I am a Full Stack developer with industry experience building
-              websites and web applications. I specialize in JavaScript and have
-              experience working with Python, Java, C# and PHP. I also have
-              working knowledge of SQL and non-relational databases like
-              MongoDB.
+              websites and web applications. 😀
+              <br />I specialize in JavaScript and have experience working with
+              Python, Java, C# and PHP. 🤩 <br /> I also have working knowledge
+              of SQL and non-relational databases like MongoDB and Firebase.🤓
+              <br /> In my free time I love learning about ethical hacking 😎
+              <br /> I can speak Spanish, English, French, Italian and German
+              🇪🇸🇺🇸🇮🇹🇫🇷🇩🇪
             </h5>
           </GridItem>
         </GridContainer>

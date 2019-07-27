@@ -57,7 +57,7 @@ class LandingPage extends React.Component {
                 <Button
                   color="facebook"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href="https://www.linkedin.com/in/alvaro-serrano-rivas/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
