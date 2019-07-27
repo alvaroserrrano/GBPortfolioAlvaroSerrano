@@ -10,10 +10,10 @@ import ListItem from "@material-ui/core/ListItem"
 import Tooltip from "@material-ui/core/Tooltip"
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons"
+import { Apps, WebAsset } from "@material-ui/icons"
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaTelegram } from "react-icons/fa"
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
@@ -46,18 +46,17 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
+          href="/projects"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Projects
+          <WebAsset className={classes.icons} /> Projects
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
+          id="linkedIn"
+          title="Follow me on linkedin"
           placement={
             typeof window !== "undefined" && window.innerWidth > 959
               ? "top"
@@ -66,19 +65,19 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="https://www.linkedin.com/in/alvaro-serrano-rivas/"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter />
+            <FaLinkedin />
           </Button>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
+          id="GitHub"
+          title="Follow me on github"
           placement={
             typeof window !== "undefined" && window.innerWidth > 959
               ? "top"
@@ -88,18 +87,18 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim"
+            href="https://github.com/alvaroserrrano"
             target="_blank"
             className={classes.navLink}
           >
-            <FaFacebook />
+            <FaGithub />
           </Button>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
+          id="telegram"
+          title="(+34)674459450"
           placement={
             typeof window !== "undefined" && window.innerWidth > 959
               ? "top"
@@ -109,11 +108,11 @@ function HeaderLinks({ ...props }) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://telegram.org/"
             target="_blank"
             className={classes.navLink}
           >
-            <FaInstagram />
+            <FaTelegram />
           </Button>
         </Tooltip>
       </ListItem>

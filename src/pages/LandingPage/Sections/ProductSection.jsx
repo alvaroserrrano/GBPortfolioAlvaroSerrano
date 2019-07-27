@@ -3,9 +3,9 @@ import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat"
-import VerifiedUser from "@material-ui/icons/VerifiedUser"
-import Fingerprint from "@material-ui/icons/Fingerprint"
+import ShutterSpeed from "@material-ui/icons/ShutterSpeed"
+import Devices from "@material-ui/icons/Devices"
+import Web from "@material-ui/icons/Web"
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
@@ -23,13 +23,34 @@ class ProductSection extends React.Component {
             <h2 className={classes.title}>Full Stack Web Developer</h2>
             <h5 className={classes.description}>
               I am a Full Stack developer with industry experience building
-              websites and web applications. 😀
-              <br />I specialize in JavaScript and have experience working with
-              Python, Java, C# and PHP. 🤩 <br /> I also have working knowledge
-              of SQL and non-relational databases like MongoDB and Firebase.🤓
-              <br /> In my free time I love learning about ethical hacking 😎
-              <br /> I can speak Spanish, English, French, Italian and German
-              🇪🇸🇺🇸🇮🇹🇫🇷🇩🇪
+              websites and web applications.{" "}
+              <span role="img" aria-label="happy">
+                😀
+              </span>
+              <br />I specialize in <strong>JavaScript</strong> and have
+              experience working with
+              <strong>Python</strong>, <strong>Java</strong>,{" "}
+              <strong>C#</strong>, and <strong>PHP</strong>.{" "}
+              <span role="img" aria-label="happy">
+                🤩
+              </span>{" "}
+              <br /> I also have working knowledge of <strong>SQL</strong>, and
+              non-relational databases like <strong>MongoDB</strong> and{" "}
+              <strong>Firebase</strong>.
+              <span role="img" aria-label="happy">
+                🤓
+              </span>
+              <br /> In my free time I love learning about{" "}
+              <strong>ethical hacking</strong>.{" "}
+              <span role="img" aria-label="happy">
+                😎
+              </span>
+              <br /> I can speak <strong>Spanish</strong>,{" "}
+              <strong>English</strong>, <strong>French</strong>,{" "}
+              <strong>Italian</strong>, and <strong>German</strong>
+              <span role="img" aria-label="languages">
+                🇪🇸🇺🇸🇮🇹🇫🇷🇩🇪
+              </span>
             </h5>
           </GridItem>
         </GridContainer>
@@ -37,27 +58,27 @@ class ProductSection extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Free Chat"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={Chat}
+                title="Fast"
+                description="Regardless of changing trends, minimalism is my priority. Fast load times and intuitive sites"
+                icon={ShutterSpeed}
                 iconColor="info"
                 vertical
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Verified Users"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={VerifiedUser}
+                title="Responsive"
+                description="Web designs and layouts that work on any device"
+                icon={Devices}
                 iconColor="success"
                 vertical
               />
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={Fingerprint}
+                title="Dynamic"
+                description="I bring websites to life with both, client and server side rendering"
+                icon={Web}
                 iconColor="danger"
                 vertical
               />
