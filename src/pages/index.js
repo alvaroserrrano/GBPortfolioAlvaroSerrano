@@ -8,7 +8,7 @@ import "typeface-roboto-slab"
 // pages for this product
 import Components from "./Components/Components.jsx"
 import LandingPage from "./LandingPage/LandingPage.jsx"
-import ProfilePage from "./ProfilePage/ProfilePage.jsx"
+import ResumePage from "./ResumePage/ResumePage.jsx"
 import LoginPage from "./LoginPage/LoginPage.jsx"
 
 let hist = createMemoryHistory()
@@ -17,7 +17,7 @@ export default () => (
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/resume" component={ResumePage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/" component={Components} />
     </Switch>
