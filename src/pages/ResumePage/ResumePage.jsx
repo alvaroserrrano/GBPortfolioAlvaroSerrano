@@ -21,16 +21,15 @@ import Parallax from "components/Parallax/Parallax.jsx"
 import Tooltip from "@material-ui/core/Tooltip"
 //Images
 import me from "assets/img/me.jpg"
-import project4 from "assets/img/project4.jpg"
-import project2 from "assets/img/project2.jpeg"
+import secin from "assets/img/secin.jpeg"
+import unesmun from "assets/img/unesmun.png"
 import project3 from "assets/img/project3.gif"
-import project1 from "assets/img/project1.jpg"
 import project5 from "assets/img/project5.jpg"
-import work1 from "assets/img/examples/olu-eletu.jpg"
-import work2 from "assets/img/examples/clem-onojeghuo.jpg"
-import work3 from "assets/img/examples/cynthia-del-rio.jpg"
-import work4 from "assets/img/examples/mariya-georgieva.jpg"
-import work5 from "assets/img/examples/clem-onojegaw.jpg"
+import wmu1 from "assets/img/wmu1.jpeg"
+import hbst1 from "assets/img/hbst1.png"
+import polyglot from "assets/img/polyglot.png"
+import edx from "assets/img/edx.jpeg"
+import udemy from "assets/img/udemy.jpg"
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx"
 
@@ -156,12 +155,12 @@ class ProfilePage extends React.Component {
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={project4}
+                                src={secin}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={project2}
+                                src={unesmun}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -173,7 +172,7 @@ class ProfilePage extends React.Component {
                               />
                               <img
                                 alt="..."
-                                src={project1}
+                                src={wmu1}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -188,29 +187,29 @@ class ProfilePage extends React.Component {
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work1}
+                                src={wmu1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work2}
+                                src={hbst1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work3}
+                                src={polyglot}
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={edx}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work5}
+                                src={udemy}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -225,7 +224,7 @@ class ProfilePage extends React.Component {
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work4}
+                                src={edx}
                                 className={navImageClasses}
                               />
                               <img
@@ -237,17 +236,17 @@ class ProfilePage extends React.Component {
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={work2}
+                                src={hbst1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={work1}
+                                src={wmu1}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={project4}
+                                src={secin}
                                 className={navImageClasses}
                               />
                             </GridItem>

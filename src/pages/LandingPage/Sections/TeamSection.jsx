@@ -73,7 +73,7 @@ class TeamSection extends React.Component {
                     title="Code"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
@@ -92,7 +92,7 @@ class TeamSection extends React.Component {
                     title="Live site"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
@@ -134,7 +134,7 @@ class TeamSection extends React.Component {
                     title="Server-side"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
@@ -153,7 +153,7 @@ class TeamSection extends React.Component {
                     title="Client side"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
@@ -172,7 +172,7 @@ class TeamSection extends React.Component {
                     title="Live site"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
@@ -216,7 +216,7 @@ class TeamSection extends React.Component {
                     title="Code"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
@@ -236,7 +236,7 @@ class TeamSection extends React.Component {
                     title="Live site"
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
-                        ? "top"
+                        ? "bottom"
                         : "left"
                     }
                     classes={{ tooltip: classes.tooltip }}
