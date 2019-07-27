@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles"
 // @material-ui/icons
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaGithub, FaArchive } from "react-icons/fa"
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx"
@@ -19,9 +19,9 @@ import CardFooter from "components/Card/CardFooter.jsx"
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx"
 
-import project1 from "assets/img/faces/project1.jpeg"
-import team2 from "assets/img/faces/christian.jpg"
-import team3 from "assets/img/faces/kendall.jpg"
+import project4 from "assets/img/project4.jpg"
+import project2 from "assets/img/project2.jpeg"
+import project3 from "assets/img/project3.gif"
 
 class TeamSection extends React.Component {
   render() {
@@ -40,22 +40,31 @@ class TeamSection extends React.Component {
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img
-                    src={project1}
+                    src={project4}
                     alt="devConnector"
                     className={imageClasses}
                   />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Gigi Hadid
+                  DevConnector
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>
+                    Connect developers
+                  </small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    <ul>
+                      <li>Social Networking site for developers</li>
+                      <li>
+                        Create a profile, share posts and Github repositories,
+                        comment and like posts, meet other developers
+                      </li>
+                      <li>
+                        MongoDB - Mongoose - Node - Express - React - Redux -
+                        JWT authentication
+                      </li>
+                    </ul>
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -63,22 +72,17 @@ class TeamSection extends React.Component {
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://github.com/alvaroserrrano/devConnector"
                   >
-                    <FaTwitter />
+                    <FaGithub />
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://dev-connector-alvaro-serrano.herokuapp.com/"
                   >
-                    <FaInstagram />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                  >
-                    <FaFacebook />
+                    <FaArchive />
                   </Button>
                 </CardFooter>
               </Card>
@@ -86,19 +90,20 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team2} alt="..." className={imageClasses} />
+                  <img src={project2} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Christian Louboutin
+                  Social Apes Site
                   <br />
-                  <small className={classes.smallTitle}>Designer</small>
+                  <small className={classes.smallTitle}>Networking site</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    <ul>
+                      <li>Social networking site</li>
+                      <li>Dynamic SPA and</li>
+                      <li>Node - Firebase - React - Redux - MaterialUI</li>
+                    </ul>
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -106,15 +111,25 @@ class TeamSection extends React.Component {
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://github.com/alvaroserrrano/SocialMediaApp"
                   >
-                    <FaTwitter />
+                    <FaGithub />
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://github.com/alvaroserrrano/SocialApeClient"
                   >
-                    <FaLinkedin />
+                    <FaGithub />
+                  </Button>
+                  <Button
+                    justIcon
+                    color="transparent"
+                    className={classes.margin5}
+                    href="https://socialape-44490.firebaseapp.com/"
+                  >
+                    <FaArchive />
                   </Button>
                 </CardFooter>
               </Card>
@@ -122,19 +137,22 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team3} alt="..." className={imageClasses} />
+                  <img src={project3} alt="..." className={imageClasses} />
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Kendall Jenner
+                  Coding Blog
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Personal Blog</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    <ul>
+                      <li>
+                        Code spliting - Image optimization - Pull data from
+                        markdown files
+                      </li>
+                      <li>Gatsby - Graphql</li>
+                    </ul>
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -142,22 +160,17 @@ class TeamSection extends React.Component {
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://github.com/alvaroserrrano/CodeBlog"
                   >
-                    <FaTwitter />
+                    <FaGithub />
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
+                    href="https://codingblog-alvaro-serrano.netlify.com/"
                   >
-                    <FaInstagram />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                  >
-                    <FaFacebook />
+                    <FaArchive />
                   </Button>
                 </CardFooter>
               </Card>
