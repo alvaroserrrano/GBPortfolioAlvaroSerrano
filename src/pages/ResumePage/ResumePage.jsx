@@ -23,15 +23,20 @@ import Tooltip from "@material-ui/core/Tooltip"
 import me from "assets/img/me.jpg"
 import secin from "assets/img/secin.jpeg"
 import unesmun from "assets/img/unesmun.png"
-import project3 from "assets/img/project3.gif"
-import project5 from "assets/img/project5.jpg"
+import campus from "assets/img/campus.jpg"
 import wmu1 from "assets/img/wmu1.jpeg"
 import hbst1 from "assets/img/hbst1.png"
 import polyglot from "assets/img/polyglot.png"
 import edx from "assets/img/edx.jpeg"
 import udemy from "assets/img/udemy.jpg"
-
-import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx"
+import communication from "assets/img/communication.jpg"
+import linux from "assets/img/linux.jpeg"
+import web from "assets/img/web.jpeg"
+import php from "assets/img/php.jpg"
+import django from "assets/img/django.png"
+import mongo from "assets/img/mongo.jpeg"
+import node from "assets/img/node.png"
+import resumePageStyle from "assets/jss/material-kit-react/views/resumePage.jsx"
 
 class ProfilePage extends React.Component {
   render() {
@@ -167,7 +172,7 @@ class ProfilePage extends React.Component {
                             <GridItem xs={12} sm={12} md={4}>
                               <img
                                 alt="..."
-                                src={project5}
+                                src={campus}
                                 className={navImageClasses}
                               />
                               <img
@@ -221,32 +226,69 @@ class ProfilePage extends React.Component {
                         tabIcon: Code,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4}>
+                            <GridItem xs={12} sm={12} md={3}>
                               <img
                                 alt="..."
-                                src={edx}
+                                src={communication}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={project3}
+                                src={polyglot}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={linux}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={web}
                                 className={navImageClasses}
                               />
                             </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
+                            <GridItem xs={12} sm={12} md={3}>
                               <img
                                 alt="..."
-                                src={hbst1}
+                                src={php}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={wmu1}
+                                src={django}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={secin}
+                                src={mongo}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={node}
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={3}>
+                              <img
+                                alt="..."
+                                src={php}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={django}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={mongo}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={node}
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -266,4 +308,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default withStyles(profilePageStyle)(ProfilePage)
+export default withStyles(resumePageStyle)(ProfilePage)
