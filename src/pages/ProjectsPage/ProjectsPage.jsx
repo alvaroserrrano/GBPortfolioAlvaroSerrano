@@ -27,12 +27,30 @@ import Button from "components/CustomButtons/Button.jsx"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import AppBar from "@material-ui/core/AppBar"
+import Box from "@material-ui/core/Box/"
 //Images
 import me from "assets/img/me.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 
 import image from "assets/img/bg7.jpg"
+import { Typography } from "@material-ui/core"
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props
+  return (
+    <Typography
+      component="div"
+      role="tabpanel"
+      hidden={value !== index}
+      id={`scrollabel-force-tabpannel-$Pindex`}
+      aria-labelledby={`scrollable-force-tab-${index}`}
+      {...other}
+    >
+      <Box p={3}>{children}</Box>
+    </Typography>
+  )
+}
 
 class ProjectsPage extends React.Component {
   constructor(props) {
@@ -49,6 +67,10 @@ class ProjectsPage extends React.Component {
       classes.imgRoundedCircle,
       classes.imgFluid
     )
+    const state = { value: "" }
+    const handleChange = event => {
+      this.setState(([this.event.target] = this.event.value))
+    }
     return (
       <div>
         <Header
@@ -148,10 +170,52 @@ class ProjectsPage extends React.Component {
                   </strong>
                 </p>
               </div>
-              <div className={classes.root}>
-                <AppBar position="static" color="default">
-                  <Tabs />
-                </AppBar>
+
+              <div className={classes.container}>
+                <GridContainer justify="center" className={classes.navGroup}>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <AppBar position="static" color="default">
+                      <Tabs
+                        value={this.state.value}
+                        onChange={this.handleChange}
+                        variant="scrollable"
+                        scrollButtons="on"
+                        indicatorColor="primary"
+                        textColor="primary"
+                        aria-label="scrollable force tabs example"
+                      >
+                        <Tab label="Item one" icon={FaNodeJs} />
+                        <Tab label="Item two" icon={FaNodeJs} />
+                        <Tab label="Item three" icon={FaNodeJs} />
+                        <Tab label="Item four" icon={FaNodeJs} />
+                        <Tab label="Item five" icon={FaNodeJs} />
+                        <Tab label="Item six" icon={FaNodeJs} />
+                        <Tab label="Item seven" icon={FaNodeJs} />
+                      </Tabs>
+                    </AppBar>
+                    <TabPanel value={this.state.value} index={0}>
+                      Item one
+                    </TabPanel>
+                    <TabPanel value={this.state.value} index={1}>
+                      Item two
+                    </TabPanel>
+                    <TabPanel value={this.state.value} index={2}>
+                      Item three
+                    </TabPanel>
+                    <TabPanel value={this.state.value} index={3}>
+                      Item four
+                    </TabPanel>
+                    <TabPanel value={this.state.value} index={4}>
+                      Item five
+                    </TabPanel>
+                    <TabPanel value={this.state.value} index={5}>
+                      Item six
+                    </TabPanel>
+                    <TabPanel value={this.state.value} index={6}>
+                      Item seven
+                    </TabPanel>
+                  </GridItem>
+                </GridContainer>
               </div>
               <Footer />
             </div>

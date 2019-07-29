@@ -42,6 +42,9 @@ const signupPageStyle = {
     flexGrow: 1,
     width: "100%",
   },
+  navGroup: {
+    marginTop: "60px",
+  },
 }
 
 export default signupPageStyle
