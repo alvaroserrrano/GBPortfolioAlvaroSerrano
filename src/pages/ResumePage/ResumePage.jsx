@@ -33,9 +33,13 @@ import communication from "assets/img/communication.jpg"
 import linux from "assets/img/linux.jpeg"
 import web from "assets/img/web.jpeg"
 import php from "assets/img/php.jpg"
+import java from "assets/img/java.jpg"
+import firebase from "assets/img/firebase.png"
 import django from "assets/img/django.png"
 import mongo from "assets/img/mongo.jpeg"
+import postgre from "assets/img/postgre.png"
 import node from "assets/img/node.png"
+import kali from "assets/img/kali.png"
 import resumePageStyle from "assets/jss/material-kit-react/views/resumePage.jsx"
 
 class ProfilePage extends React.Component {
@@ -251,22 +255,22 @@ class ProfilePage extends React.Component {
                             <GridItem xs={12} sm={12} md={3}>
                               <img
                                 alt="..."
-                                src={php}
+                                src={java}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={django}
+                                src={firebase}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={mongo}
+                                src={postgre}
                                 className={navImageClasses}
                               />
                               <img
                                 alt="..."
-                                src={node}
+                                src={kali}
                                 className={navImageClasses}
                               />
                             </GridItem>
