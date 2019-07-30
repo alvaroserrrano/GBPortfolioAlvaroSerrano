@@ -1,4 +1,5 @@
 import React from "react"
+import ProjectsTabs from "./Projects/ProjectsTabs.jsx"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 // nodejs library that concatenates classes
@@ -264,6 +265,11 @@ class ProjectsPage extends React.Component {
                         </List>
                       }
                     />
+                  </GridItem>
+                </GridContainer>
+                <GridContainer justify="center">
+                  <GridItem xs={12} sm={12} md={6}>
+                    <ProjectsTabs />
                   </GridItem>
                 </GridContainer>
               </div>
