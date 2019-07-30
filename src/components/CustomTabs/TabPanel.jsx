@@ -6,7 +6,7 @@ import classNames from "classnames"
 // nodejs library to set properties for components
 import PropTypes from "prop-types"
 
-class TabPanel extends React.Component {
+export class TabPanel extends React.Component {
   state = {
     value: 0,
   }
@@ -17,16 +17,18 @@ class TabPanel extends React.Component {
   render() {
     const { children, value, index, ...other } = this.props
     return (
-      <Typography
-        component="div"
-        role="tabpanel"
-        hidden={value !== index}
-        id={`scrollable-auto-tab-${index}`}
-        aria-labelledby={`scrollable-auto-tab-${index}`}
-        {...other}
-      >
-        <Box p={3}>{children}</Box>
-      </Typography>
+      <div>
+        <Typography
+          component="div"
+          role="tabpanel"
+          hidden={value !== index}
+          id={`scrollable-auto-tab-${index}`}
+          aria-labelledby={`scrollable-auto-tab-${index}`}
+          {...other}
+        >
+          <Box p={3}>{children}</Box>
+        </Typography>
+      </div>
     )
   }
 }

@@ -19,6 +19,9 @@ import Face from "@material-ui/icons/Face"
 import Chat from "@material-ui/icons/Chat"
 import Build from "@material-ui/icons/Build"
 // core components
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+
 import Tooltip from "@material-ui/core/Tooltip"
 import Parallax from "components/Parallax/Parallax.jsx"
 import Paper from "@material-ui/core/Paper"
@@ -37,6 +40,7 @@ import me from "assets/img/me.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
 import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx"
 import TabPanel from "../../components/CustomTabs/TabPanel"
@@ -165,152 +169,55 @@ class ProjectsPage extends React.Component {
               <div className={classes.container}>
                 <GridContainer justify="center" className={classes.navGroup}>
                   <GridItem xs={12} sm={12} md={6}>
-                    <AppBar position="static" color="default">
-                      <Tabs
-                        value={this.state.value}
-                        onChange={this.handleChange}
-                        variant="scrollable"
-                        scrollButtons="on"
-                        indicatorColor="primary"
-                        textColor="primary"
-                        aria-label="scrollable force tabs example"
-                      >
-                        <Tab label="Item one" icon={FaNodeJs} />
-                        <Tab label="Item two" icon={FaNodeJs} />
-                        <Tab label="Item three" icon={FaNodeJs} />
-                        <Tab label="Item four" icon={FaNodeJs} />
-                        <Tab label="Item five" icon={FaNodeJs} />
-                        <Tab label="Item six" icon={FaNodeJs} />
-                        <Tab label="Item seven" icon={FaNodeJs} />
-                      </Tabs>
-                    </AppBar>{" "}
-                    <TabPanel value={this.state.value} index={0}>
-                      Item one
-                    </TabPanel>
-                    <TabPanel value={this.state.value} index={1}>
-                      Item two
-                    </TabPanel>
-                    <TabPanel value={this.state.value} index={2}>
-                      Item three
-                    </TabPanel>
-                    <TabPanel value={this.state.value} index={3}>
-                      Item four
-                    </TabPanel>
-                    <TabPanel value={this.state.value} index={4}>
-                      Item five
-                    </TabPanel>
-                    <TabPanel value={this.state.value} index={5}>
-                      Item six */}
-                    </TabPanel>
-                    <TabPanel value={this.state.value} index={6}>
-                      Item seven
-                    </TabPanel>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={6}>
-                    <h3>
-                      <small>Tabs with Icons on Card</small>
-                    </h3>
-                    <CustomTabs
-                      headerColor="primary"
-                      tabs={[
-                        {
-                          tabName: "Profile",
-                          tabIcon: Face,
-                          tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. So when you get
-                              something that has the name Kanye West on it, it’s
-                              supposed to be pushing the furthest possibilities.
-                              I will be the leader of a company that ends up
-                              being worth billions of dollars, because I got the
-                              answers. I understand culture. I am the nucleus.
-                            </p>
-                          ),
-                        },
-                        {
-                          tabName: "Profile",
-                          tabIcon: Face,
-                          tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. So when you get
-                              something that has the name Kanye West on it, it’s
-                              supposed to be pushing the furthest possibilities.
-                              I will be the leader of a company that ends up
-                              being worth billions of dollars, because I got the
-                              answers. I understand culture. I am the nucleus.
-                            </p>
-                          ),
-                        },
-                        {
-                          tabName: "Profile",
-                          tabIcon: Face,
-                          tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. So when you get
-                              something that has the name Kanye West on it, it’s
-                              supposed to be pushing the furthest possibilities.
-                              I will be the leader of a company that ends up
-                              being worth billions of dollars, because I got the
-                              answers. I understand culture. I am the nucleus.
-                            </p>
-                          ),
-                        },
-                        {
-                          tabName: "Profile",
-                          tabIcon: Face,
-                          tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. So when you get
-                              something that has the name Kanye West on it, it’s
-                              supposed to be pushing the furthest possibilities.
-                              I will be the leader of a company that ends up
-                              being worth billions of dollars, because I got the
-                              answers. I understand culture. I am the nucleus.
-                            </p>
-                          ),
-                        },
-                        {
-                          tabName: "Messages",
-                          tabIcon: Chat,
-                          tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. I will be the
-                              leader of a company that ends up being worth
-                              billions of dollars, because I got the answers. I
-                              understand culture. I am the nucleus. I think
-                              that’s a responsibility that I have, to push
-                              possibilities, to show people, this is the level
-                              that things could be at.
-                            </p>
-                          ),
-                        },
-                        {
-                          tabName: "Settings",
-                          tabIcon: Build,
-                          tabContent: (
-                            <p className={classes.textCenter}>
-                              think that’s a responsibility that I have, to push
-                              possibilities, to show people, this is the level
-                              that things could be at. So when you get something
-                              that has the name Kanye West on it, it’s supposed
-                              to be pushing the furthest possibilities. I will
-                              be the leader of a company that ends up being
-                              worth billions of dollars, because I got the
-                              answers. I understand culture. I am the nucleus.
-                            </p>
-                          ),
-                        },
-                      ]}
+                    <div className={classes.title}>
+                      <h3>Menu</h3>
+                    </div>
+                    <Header
+                      brand="Menu"
+                      color="primary"
+                      leftLinks={
+                        <List className={classes.list}>
+                          <ListItem className={classes.listItem}>
+                            <Button
+                              href="#pablo"
+                              className={classes.navLink}
+                              onClick={e => e.preventDefault()}
+                              color="transparent"
+                            >
+                              Link
+                            </Button>
+                          </ListItem>
+                          <ListItem className={classes.listItem}>
+                            <Button
+                              href="#pablo"
+                              className={classes.navLink}
+                              onClick={e => e.preventDefault()}
+                              color="transparent"
+                            >
+                              Link
+                            </Button>
+                          </ListItem>
+                          <ListItem className={classes.listItem}>
+                            <CustomDropdown
+                              buttonText="Dropdown"
+                              dropdownHeader="Dropdown Header"
+                              buttonProps={{
+                                className: classes.navLink,
+                                color: "transparent",
+                              }}
+                              dropdownList={[
+                                "Action",
+                                "Another action",
+                                "Something else here",
+                                { divider: true },
+                                "Separated link",
+                                { divider: true },
+                                "One more separated link",
+                              ]}
+                            />
+                          </ListItem>
+                        </List>
+                      }
                     />
                   </GridItem>
                 </GridContainer>

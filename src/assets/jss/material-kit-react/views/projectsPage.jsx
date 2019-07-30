@@ -15,6 +15,11 @@ const signupPageStyle = {
   name: {
     marginTop: "-80px",
   },
+  title: {
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none",
+  },
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
