@@ -9,10 +9,10 @@ import {
   FaTelegram,
   FaGithub,
   FaJava,
+  FaJsSquare,
   FaNodeJs,
   FaReact,
-  FaProjectDiagram,
-  FaPhp,
+  FaDatabase,
 } from "react-icons/fa"
 // @material-ui/icons
 import Face from "@material-ui/icons/Face"
@@ -170,10 +170,10 @@ class ProjectsPage extends React.Component {
                 <GridContainer justify="center" className={classes.navGroup}>
                   <GridItem xs={12} sm={12} md={6}>
                     <div className={classes.title}>
-                      <h3>Menu</h3>
+                      <h3>Projects</h3>
                     </div>
                     <Header
-                      brand="Menu"
+                      brand="Projects"
                       color="primary"
                       leftLinks={
                         <List className={classes.list}>
@@ -184,7 +184,7 @@ class ProjectsPage extends React.Component {
                               onClick={e => e.preventDefault()}
                               color="transparent"
                             >
-                              Link
+                              <FaReact /> + <FaNodeJs /> + <FaDatabase />
                             </Button>
                           </ListItem>
                           <ListItem className={classes.listItem}>
@@ -194,7 +194,17 @@ class ProjectsPage extends React.Component {
                               onClick={e => e.preventDefault()}
                               color="transparent"
                             >
-                              Link
+                              <FaJsSquare />
+                            </Button>
+                          </ListItem>
+                          <ListItem className={classes.listItem}>
+                            <Button
+                              href="#pablo"
+                              className={classes.navLink}
+                              onClick={e => e.preventDefault()}
+                              color="transparent"
+                            >
+                              <FaJava />
                             </Button>
                           </ListItem>
                           <ListItem className={classes.listItem}>

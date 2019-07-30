@@ -15,16 +15,45 @@ const signupPageStyle = {
   name: {
     marginTop: "-80px",
   },
+  link: {
+    textDecoration: "none",
+  },
   title: {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+  },
+  navLink: {
+    color: "inherit",
+    position: "relative",
+    padding: "0.9375rem",
+    fontWeight: "400",
+    fontSize: "12px",
+    textTransform: "uppercase",
+    borderRadius: "3px",
+    lineHeight: "20px",
+    textDecoration: "none",
+    margin: "0px",
+    display: "inline-flex",
+    "&:hover,&:focus": {
+      color: "inherit",
+      background: "rgba(200, 200, 200, 0.2)",
+    },
   },
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
     color: "#999",
     textAlign: "center !important",
+  },
+  listItem: {
+    float: "left",
+    color: "inherit",
+    position: "relative",
+    display: "block",
+    width: "auto",
+    margin: "0",
+    padding: "0",
   },
 
   ...imagesStyle,
