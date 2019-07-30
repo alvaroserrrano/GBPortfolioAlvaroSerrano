@@ -14,6 +14,10 @@ import {
   FaProjectDiagram,
   FaPhp,
 } from "react-icons/fa"
+// @material-ui/icons
+import Face from "@material-ui/icons/Face"
+import Chat from "@material-ui/icons/Chat"
+import Build from "@material-ui/icons/Build"
 // core components
 import Tooltip from "@material-ui/core/Tooltip"
 import Parallax from "components/Parallax/Parallax.jsx"
@@ -27,30 +31,17 @@ import Button from "components/CustomButtons/Button.jsx"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import AppBar from "@material-ui/core/AppBar"
-import Box from "@material-ui/core/Box/"
+import Box from "@material-ui/system"
 //Images
 import me from "assets/img/me.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 
+import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
+import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx"
+import TabPanel from "../../components/CustomTabs/TabPanel"
 import image from "assets/img/bg7.jpg"
 import { Typography } from "@material-ui/core"
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props
-  return (
-    <Typography
-      component="div"
-      role="tabpanel"
-      hidden={value !== index}
-      id={`scrollabel-force-tabpannel-$Pindex`}
-      aria-labelledby={`scrollable-force-tab-${index}`}
-      {...other}
-    >
-      <Box p={3}>{children}</Box>
-    </Typography>
-  )
-}
 
 class ProjectsPage extends React.Component {
   constructor(props) {
@@ -192,7 +183,7 @@ class ProjectsPage extends React.Component {
                         <Tab label="Item six" icon={FaNodeJs} />
                         <Tab label="Item seven" icon={FaNodeJs} />
                       </Tabs>
-                    </AppBar>
+                    </AppBar>{" "}
                     <TabPanel value={this.state.value} index={0}>
                       Item one
                     </TabPanel>
@@ -209,11 +200,118 @@ class ProjectsPage extends React.Component {
                       Item five
                     </TabPanel>
                     <TabPanel value={this.state.value} index={5}>
-                      Item six
+                      Item six */}
                     </TabPanel>
                     <TabPanel value={this.state.value} index={6}>
                       Item seven
                     </TabPanel>
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <h3>
+                      <small>Tabs with Icons on Card</small>
+                    </h3>
+                    <CustomTabs
+                      headerColor="primary"
+                      tabs={[
+                        {
+                          tabName: "Profile",
+                          tabIcon: Face,
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. So when you get
+                              something that has the name Kanye West on it, it’s
+                              supposed to be pushing the furthest possibilities.
+                              I will be the leader of a company that ends up
+                              being worth billions of dollars, because I got the
+                              answers. I understand culture. I am the nucleus.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: "Profile",
+                          tabIcon: Face,
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. So when you get
+                              something that has the name Kanye West on it, it’s
+                              supposed to be pushing the furthest possibilities.
+                              I will be the leader of a company that ends up
+                              being worth billions of dollars, because I got the
+                              answers. I understand culture. I am the nucleus.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: "Profile",
+                          tabIcon: Face,
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. So when you get
+                              something that has the name Kanye West on it, it’s
+                              supposed to be pushing the furthest possibilities.
+                              I will be the leader of a company that ends up
+                              being worth billions of dollars, because I got the
+                              answers. I understand culture. I am the nucleus.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: "Profile",
+                          tabIcon: Face,
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. So when you get
+                              something that has the name Kanye West on it, it’s
+                              supposed to be pushing the furthest possibilities.
+                              I will be the leader of a company that ends up
+                              being worth billions of dollars, because I got the
+                              answers. I understand culture. I am the nucleus.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: "Messages",
+                          tabIcon: Chat,
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. I will be the
+                              leader of a company that ends up being worth
+                              billions of dollars, because I got the answers. I
+                              understand culture. I am the nucleus. I think
+                              that’s a responsibility that I have, to push
+                              possibilities, to show people, this is the level
+                              that things could be at.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: "Settings",
+                          tabIcon: Build,
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              think that’s a responsibility that I have, to push
+                              possibilities, to show people, this is the level
+                              that things could be at. So when you get something
+                              that has the name Kanye West on it, it’s supposed
+                              to be pushing the furthest possibilities. I will
+                              be the leader of a company that ends up being
+                              worth billions of dollars, because I got the
+                              answers. I understand culture. I am the nucleus.
+                            </p>
+                          ),
+                        },
+                      ]}
+                    />
                   </GridItem>
                 </GridContainer>
               </div>
