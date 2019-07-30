@@ -53,8 +53,7 @@ function Footer({ ...props }) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> for a better web.
+          &copy; {1900 + new Date().getYear()} , Alvaro Serrano Rivas.
         </div>
       </div>
     </footer>

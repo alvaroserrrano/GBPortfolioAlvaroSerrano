@@ -1,16 +1,11 @@
 import React from "react"
+import CardContent from "./CardContent"
 import CustomTabs from "../../../components/CustomTabs/CustomTabs"
 import tabsStyle from "../../../assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx"
 import AppBar from "@material-ui/core/AppBar"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import Typography from "@material-ui/core/Typography"
-import Card from "@material-ui/core/Card"
-import CardActionArea from "@material-ui/core/CardActionArea"
-import CardContent from "@material-ui/core/CardContent"
-import CardActions from "@material-ui/core/CardActions"
-import CardMedia from "@material-ui/core/CardMedia"
-import Button from "@material-ui/core/Button"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
@@ -63,7 +58,7 @@ export default function ScrollableTabsButtonAuto() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Typography>Hello from one</Typography>
+        <CardContent />
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two
