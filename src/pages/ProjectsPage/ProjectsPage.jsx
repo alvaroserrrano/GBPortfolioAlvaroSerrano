@@ -21,7 +21,6 @@ import Build from "@material-ui/icons/Build"
 // core components
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
-
 import Tooltip from "@material-ui/core/Tooltip"
 import Parallax from "components/Parallax/Parallax.jsx"
 import Paper from "@material-ui/core/Paper"
@@ -178,51 +177,87 @@ class ProjectsPage extends React.Component {
                       leftLinks={
                         <List className={classes.list}>
                           <ListItem className={classes.listItem}>
-                            <Button
-                              href="#pablo"
-                              className={classes.navLink}
-                              onClick={e => e.preventDefault()}
-                              color="transparent"
+                            <Tooltip
+                              id="MERN"
+                              title="MERN stack"
+                              placement={
+                                typeof window !== "undefined" &&
+                                window.innerWidth > 959
+                                  ? "top"
+                                  : "left"
+                              }
+                              classes={{ tooltip: classes.tooltip }}
                             >
-                              <FaReact /> + <FaNodeJs /> + <FaDatabase />
-                            </Button>
+                              <Button
+                                href="#"
+                                className={classes.navLink}
+                                onClick={e => e.preventDefault()}
+                                color="transparent"
+                              >
+                                <FaReact /> + <FaNodeJs /> + <FaDatabase />
+                              </Button>
+                            </Tooltip>
                           </ListItem>
                           <ListItem className={classes.listItem}>
-                            <Button
-                              href="#pablo"
-                              className={classes.navLink}
-                              onClick={e => e.preventDefault()}
-                              color="transparent"
+                            <Tooltip
+                              id="Javascript"
+                              title="Vanilla Javascript"
+                              placement={
+                                typeof window !== "undefined" &&
+                                window.innerWidth > 959
+                                  ? "top"
+                                  : "left"
+                              }
+                              classes={{ tooltip: classes.tooltip }}
                             >
-                              <FaJsSquare />
-                            </Button>
+                              <Button
+                                href="#"
+                                className={classes.navLink}
+                                onClick={e => e.preventDefault()}
+                                color="transparent"
+                              >
+                                <FaJsSquare />
+                              </Button>
+                            </Tooltip>
                           </ListItem>
                           <ListItem className={classes.listItem}>
-                            <Button
-                              href="#pablo"
-                              className={classes.navLink}
-                              onClick={e => e.preventDefault()}
-                              color="transparent"
+                            <Tooltip
+                              id="Java"
+                              title="Java"
+                              placement={
+                                typeof window !== "undefined" &&
+                                window.innerWidth > 959
+                                  ? "top"
+                                  : "left"
+                              }
+                              classes={{ tooltip: classes.tooltip }}
                             >
-                              <FaJava />
-                            </Button>
+                              <Button
+                                href="#"
+                                className={classes.navLink}
+                                onClick={e => e.preventDefault()}
+                                color="transparent"
+                              >
+                                <FaJava />
+                              </Button>
+                            </Tooltip>
                           </ListItem>
                           <ListItem className={classes.listItem}>
                             <CustomDropdown
-                              buttonText="Dropdown"
-                              dropdownHeader="Dropdown Header"
+                              buttonText="Other"
+                              dropdownHeader="Other projects"
                               buttonProps={{
                                 className: classes.navLink,
                                 color: "transparent",
                               }}
                               dropdownList={[
-                                "Action",
-                                "Another action",
-                                "Something else here",
+                                "React",
                                 { divider: true },
-                                "Separated link",
+                                "Laravel",
                                 { divider: true },
-                                "One more separated link",
+                                "Gatsby",
+                                { divider: true },
+                                "C#",
                               ]}
                             />
                           </ListItem>

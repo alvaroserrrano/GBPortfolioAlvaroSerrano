@@ -1,5 +1,6 @@
 import { container } from "assets/jss/material-kit-react.jsx"
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx"
+import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx"
 
 const signupPageStyle = {
   container,
@@ -55,7 +56,10 @@ const signupPageStyle = {
     margin: "0",
     padding: "0",
   },
-
+  ...tooltip,
+  marginRight5: {
+    marginRight: "5px",
+  },
   ...imagesStyle,
   main: {
     background: "#FFFFFF",
