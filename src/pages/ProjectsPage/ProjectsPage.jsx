@@ -1,5 +1,4 @@
 import React, { Fragment } from "react"
-import ProjectsTabs from "./Projects/ProjectsTabs.jsx"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 // nodejs library that concatenates classes
@@ -16,36 +15,22 @@ import {
   FaDatabase,
   FaPhp,
 } from "react-icons/fa"
-// @material-ui/icons
-import Face from "@material-ui/icons/Face"
-import Chat from "@material-ui/icons/Chat"
-import Build from "@material-ui/icons/Build"
 // core components
-import List from "@material-ui/core/List"
+
 import ListItem from "@material-ui/core/ListItem"
 import Tooltip from "@material-ui/core/Tooltip"
 import Parallax from "components/Parallax/Parallax.jsx"
-import Paper from "@material-ui/core/Paper"
 import Header from "components/Header/Header.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Footer from "components/Footer/Footer.jsx"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import Button from "components/CustomButtons/Button.jsx"
-import Tabs from "@material-ui/core/Tabs"
-import Tab from "@material-ui/core/Tab"
-import AppBar from "@material-ui/core/AppBar"
-import Box from "@material-ui/system"
 //Images
 import me from "assets/img/me.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
-
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
-import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx"
-import image from "assets/img/bg7.jpg"
-import { Typography } from "@material-ui/core"
 
 class ProjectsPage extends React.Component {
   constructor(props) {
@@ -62,10 +47,6 @@ class ProjectsPage extends React.Component {
       classes.imgRoundedCircle,
       classes.imgFluid
     )
-    const state = { value: "" }
-    const handleChange = event => {
-      this.setState(([this.event.target] = this.event.value))
-    }
     return (
       <div>
         <Header
@@ -211,9 +192,6 @@ class ProjectsPage extends React.Component {
                           ),
                           tabContent: (
                             <Fragment>
-                              <FaReact />
-                              <FaNodeJs />
-                              <FaDatabase />
                               <p className={classes.textCenter}>
                                 I think that’s a responsibility that I have, to
                                 push possibilities, to show people, this is the

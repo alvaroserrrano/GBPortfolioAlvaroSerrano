@@ -83,6 +83,19 @@ const signupPageStyle = {
   navGroup: {
     marginTop: "60px",
   },
+  card: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 0,
+    paddingTop: "56.25%",
+  },
+  expand: {
+    transform: "rotate(180deg)",
+  },
+  avatar: {
+    backgroundColor: "#7a0000",
+  },
 }
 
 export default signupPageStyle

@@ -12,7 +12,6 @@ import ShoppingBasket from "@material-ui/icons/ShoppingBasket"
 import ThumbDown from "@material-ui/icons/ThumbDown"
 import ThumbUp from "@material-ui/icons/ThumbUp"
 import Typography from "@material-ui/core/Typography"
-import Box from "@material-ui/core/Box"
 import GridContainer from "@material-ui/core/Grid"
 import GridItem from "@material-ui/core/Grid"
 function TabPanel(props) {
