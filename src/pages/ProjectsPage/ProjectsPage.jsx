@@ -45,7 +45,7 @@ import me from "assets/img/me.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
-
+import PaginationLinks from "./Projects/PaginationLinks"
 class ProjectsPage extends React.Component {
   constructor(props) {
     super(props)
@@ -171,7 +171,6 @@ class ProjectsPage extends React.Component {
                 </GridContainer>
                 <GridContainer justify="center">
                   <GridItem xs={12} sm={12} md={6}>
-                    {/* <ProjectsTabs /> */}
                     <CustomTabs
                       plainTabs
                       className={classes.list}
@@ -207,19 +206,19 @@ class ProjectsPage extends React.Component {
                           tabContent: (
                             <Fragment>
                               <Grid container spacing={3}>
-                                <Grid item xs={12} sm={6} spacing={3}>
+                                <Grid item xs={12} sm={6}>
                                   <Card className={classes.card}>
                                     <CardHeader
                                       avatar={
                                         <Avatar
-                                          aria-label="codeBlog"
+                                          aria-label="devConnector"
                                           className={classes.avatar}
                                         >
-                                          C
+                                          CG
                                         </Avatar>
                                       }
-                                      title="CodeBlog"
-                                      subheader="Coding blog"
+                                      title="codingGigs"
+                                      subheader="Job finder app"
                                     />
 
                                     <CardContent>
@@ -230,18 +229,19 @@ class ProjectsPage extends React.Component {
                                       >
                                         Full stack Application <br />
                                         <br />
-                                        <strong>Technologies:</strong>Gatsby -
-                                        Markdown - Graphql
+                                        <strong>Technologies:</strong>HTML - CSS
+                                        - Sequelize - PostgreSQL - NodeJS -
+                                        Handlebars
                                         <br />
                                         <br />
-                                        Code splitting - Image optimization -
-                                        SEO - Prefetching
+                                        Add new jobs and view current jobs
+                                        offers matching your skills
                                       </Typography>
                                     </CardContent>
                                     <CardActions disableSpacing>
                                       <Tooltip
                                         id="MERN"
-                                        title="See code"
+                                        title="Client-side code"
                                         placement={
                                           typeof window !== "undefined" &&
                                           window.innerWidth > 959
@@ -252,7 +252,7 @@ class ProjectsPage extends React.Component {
                                       >
                                         <IconButton
                                           aria-label="See code"
-                                          href="https://github.com/alvaroserrrano/CodeBlog"
+                                          href="https://github.com/alvaroserrrano/gigs-job-search"
                                           target="_blank"
                                           rel="noopener noreferrer"
                                         >
@@ -271,8 +271,8 @@ class ProjectsPage extends React.Component {
                                         classes={{ tooltip: classes.tooltip }}
                                       >
                                         <IconButton
-                                          aria-label="Live site"
-                                          href="https://codingblog-alvaro-serrano.netlify.com/"
+                                          aria-label="Server-side code"
+                                          href="https://dev-job-search-alvaro-serrano.herokuapp.com/"
                                           target="_blank"
                                           rel="noopener noreferrer"
                                         >
@@ -282,6 +282,7 @@ class ProjectsPage extends React.Component {
                                     </CardActions>
                                   </Card>
                                 </Grid>
+
                                 <Grid item xs={12} sm={6}>
                                   <Card className={classes.card}>
                                     <CardHeader
@@ -455,19 +456,19 @@ class ProjectsPage extends React.Component {
                                     </CardActions>
                                   </Card>
                                 </Grid>
-                                <Grid item xs={12} sm={6}>
+                                <Grid item xs={12} sm={6} spacing={3}>
                                   <Card className={classes.card}>
                                     <CardHeader
                                       avatar={
                                         <Avatar
-                                          aria-label="devConnector"
+                                          aria-label="codeBlog"
                                           className={classes.avatar}
                                         >
-                                          CG
+                                          C
                                         </Avatar>
                                       }
-                                      title="codingGigs"
-                                      subheader="Job finder app"
+                                      title="CodeBlog"
+                                      subheader="Coding blog"
                                     />
 
                                     <CardContent>
@@ -478,19 +479,18 @@ class ProjectsPage extends React.Component {
                                       >
                                         Full stack Application <br />
                                         <br />
-                                        <strong>Technologies:</strong>HTML - CSS
-                                        - Sequelize - PostgreSQL - NodeJS -
-                                        Handlebars
+                                        <strong>Technologies:</strong>Gatsby -
+                                        Markdown - Graphql
                                         <br />
                                         <br />
-                                        Add new jobs and view current jobs
-                                        offers matching your skills
+                                        Code splitting - Image optimization -
+                                        SEO - Prefetching
                                       </Typography>
                                     </CardContent>
                                     <CardActions disableSpacing>
                                       <Tooltip
                                         id="MERN"
-                                        title="Client-side code"
+                                        title="See code"
                                         placement={
                                           typeof window !== "undefined" &&
                                           window.innerWidth > 959
@@ -501,7 +501,7 @@ class ProjectsPage extends React.Component {
                                       >
                                         <IconButton
                                           aria-label="See code"
-                                          href="https://github.com/alvaroserrrano/gigs-job-search"
+                                          href="https://github.com/alvaroserrrano/CodeBlog"
                                           target="_blank"
                                           rel="noopener noreferrer"
                                         >
@@ -520,8 +520,8 @@ class ProjectsPage extends React.Component {
                                         classes={{ tooltip: classes.tooltip }}
                                       >
                                         <IconButton
-                                          aria-label="Server-side code"
-                                          href="https://dev-job-search-alvaro-serrano.herokuapp.com/"
+                                          aria-label="Live site"
+                                          href="https://codingblog-alvaro-serrano.netlify.com/"
                                           target="_blank"
                                           rel="noopener noreferrer"
                                         >
@@ -563,17 +563,10 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. I will be the
-                              leader of a company that ends up being worth
-                              billions of dollars, because I got the answers. I
-                              understand culture. I am the nucleus. I think
-                              that’s a responsibility that I have, to push
-                              possibilities, to show people, this is the level
-                              that things could be at.
-                            </p>
+                            <Grid container spacing={3}>
+                              <Grid item xs={12} sm={6} />
+                              <Grid item xs={12} sm={6} />
+                            </Grid>
                           ),
                         },
                         {
