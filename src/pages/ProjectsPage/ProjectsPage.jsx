@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import ProjectsTabs from "./Projects/ProjectsTabs.jsx"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
@@ -14,6 +14,7 @@ import {
   FaNodeJs,
   FaReact,
   FaDatabase,
+  FaPhp,
 } from "react-icons/fa"
 // @material-ui/icons
 import Face from "@material-ui/icons/Face"
@@ -43,7 +44,6 @@ import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
 import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx"
-import TabPanel from "../../components/CustomTabs/TabPanel"
 import image from "assets/img/bg7.jpg"
 import { Typography } from "@material-ui/core"
 
@@ -172,104 +172,227 @@ class ProjectsPage extends React.Component {
                     <div className={classes.title}>
                       <h3>Projects</h3>
                     </div>
-                    <Header
-                      brand="Projects"
-                      color="primary"
-                      leftLinks={
-                        <List className={classes.list}>
-                          <ListItem className={classes.listItem}>
-                            <Tooltip
-                              id="MERN"
-                              title="MERN stack"
-                              placement={
-                                typeof window !== "undefined" &&
-                                window.innerWidth > 959
-                                  ? "top"
-                                  : "left"
-                              }
-                              classes={{ tooltip: classes.tooltip }}
-                            >
-                              <Button
-                                href="#"
-                                className={classes.navLink}
-                                onClick={e => e.preventDefault()}
-                                color="transparent"
-                              >
-                                <FaReact /> + <FaNodeJs /> + <FaDatabase />
-                              </Button>
-                            </Tooltip>
-                          </ListItem>
-                          <ListItem className={classes.listItem}>
-                            <Tooltip
-                              id="Javascript"
-                              title="Vanilla Javascript"
-                              placement={
-                                typeof window !== "undefined" &&
-                                window.innerWidth > 959
-                                  ? "top"
-                                  : "left"
-                              }
-                              classes={{ tooltip: classes.tooltip }}
-                            >
-                              <Button
-                                href="#"
-                                className={classes.navLink}
-                                onClick={e => e.preventDefault()}
-                                color="transparent"
-                              >
-                                <FaJsSquare />
-                              </Button>
-                            </Tooltip>
-                          </ListItem>
-                          <ListItem className={classes.listItem}>
-                            <Tooltip
-                              id="Java"
-                              title="Java"
-                              placement={
-                                typeof window !== "undefined" &&
-                                window.innerWidth > 959
-                                  ? "top"
-                                  : "left"
-                              }
-                              classes={{ tooltip: classes.tooltip }}
-                            >
-                              <Button
-                                href="#"
-                                className={classes.navLink}
-                                onClick={e => e.preventDefault()}
-                                color="transparent"
-                              >
-                                <FaJava />
-                              </Button>
-                            </Tooltip>
-                          </ListItem>
-                          <ListItem className={classes.listItem}>
-                            <CustomDropdown
-                              buttonText="Other"
-                              dropdownHeader="Other projects"
-                              buttonProps={{
-                                className: classes.navLink,
-                                color: "transparent",
-                              }}
-                              dropdownList={[
-                                "React",
-                                { divider: true },
-                                "Laravel",
-                                { divider: true },
-                                "Gatsby",
-                                { divider: true },
-                                "C#",
-                              ]}
-                            />
-                          </ListItem>
-                        </List>
-                      }
-                    />
                   </GridItem>
                 </GridContainer>
                 <GridContainer justify="center">
                   <GridItem xs={12} sm={12} md={6}>
-                    <ProjectsTabs />
+                    {/* <ProjectsTabs /> */}
+                    <CustomTabs
+                      plainTabs
+                      className={classes.list}
+                      headerColor="primary"
+                      tabs={[
+                        {
+                          tabName: (
+                            <Fragment>
+                              <ListItem className={classes.listItem}>
+                                <Tooltip
+                                  id="MERN"
+                                  title="MERN stack"
+                                  placement={
+                                    typeof window !== "undefined" &&
+                                    window.innerWidth > 959
+                                      ? "top"
+                                      : "left"
+                                  }
+                                  classes={{ tooltip: classes.tooltip }}
+                                >
+                                  <Button
+                                    href="#"
+                                    className={classes.navLink}
+                                    onClick={e => e.preventDefault()}
+                                    color="transparent"
+                                  >
+                                    <FaReact /> + <FaNodeJs /> + <FaDatabase />
+                                  </Button>
+                                </Tooltip>
+                              </ListItem>
+                            </Fragment>
+                          ),
+                          tabContent: (
+                            <Fragment>
+                              <FaReact />
+                              <FaNodeJs />
+                              <FaDatabase />
+                              <p className={classes.textCenter}>
+                                I think that’s a responsibility that I have, to
+                                push possibilities, to show people, this is the
+                                level that things could be at. So when you get
+                                something that has the name Kanye West on it,
+                                it’s supposed to be pushing the furthest
+                                possibilities. I will be the leader of a company
+                                that ends up being worth billions of dollars,
+                                because I got the answers. I understand culture.
+                                I am the nucleus.
+                              </p>
+                            </Fragment>
+                          ),
+                        },
+                        {
+                          tabName: (
+                            <Fragment>
+                              <ListItem className={classes.listItem}>
+                                <Tooltip
+                                  id="JS"
+                                  title="Vanilla Javascript"
+                                  placement={
+                                    typeof window !== "undefined" &&
+                                    window.innerWidth > 959
+                                      ? "top"
+                                      : "left"
+                                  }
+                                  classes={{ tooltip: classes.tooltip }}
+                                >
+                                  <Button
+                                    href="#"
+                                    className={classes.navLink}
+                                    onClick={e => e.preventDefault()}
+                                    color="transparent"
+                                  >
+                                    <FaJsSquare />
+                                  </Button>
+                                </Tooltip>
+                              </ListItem>
+                            </Fragment>
+                          ),
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. I will be the
+                              leader of a company that ends up being worth
+                              billions of dollars, because I got the answers. I
+                              understand culture. I am the nucleus. I think
+                              that’s a responsibility that I have, to push
+                              possibilities, to show people, this is the level
+                              that things could be at.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: (
+                            <Fragment>
+                              <ListItem className={classes.listItem}>
+                                <Tooltip
+                                  id="Java"
+                                  title="JAVA"
+                                  placement={
+                                    typeof window !== "undefined" &&
+                                    window.innerWidth > 959
+                                      ? "top"
+                                      : "left"
+                                  }
+                                  classes={{ tooltip: classes.tooltip }}
+                                >
+                                  <Button
+                                    href="#"
+                                    className={classes.navLink}
+                                    onClick={e => e.preventDefault()}
+                                    color="transparent"
+                                  >
+                                    <FaJava />
+                                  </Button>
+                                </Tooltip>
+                              </ListItem>
+                            </Fragment>
+                          ),
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              think that’s a responsibility that I have, to push
+                              possibilities, to show people, this is the level
+                              that things could be at. So when you get something
+                              that has the name Kanye West on it, it’s supposed
+                              to be pushing the furthest possibilities. I will
+                              be the leader of a company that ends up being
+                              worth billions of dollars, because I got the
+                              answers. I understand culture. I am the nucleus.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: (
+                            <Fragment>
+                              <ListItem className={classes.listItem}>
+                                <Tooltip
+                                  id="C"
+                                  title="C#"
+                                  placement={
+                                    typeof window !== "undefined" &&
+                                    window.innerWidth > 959
+                                      ? "top"
+                                      : "left"
+                                  }
+                                  classes={{ tooltip: classes.tooltip }}
+                                >
+                                  <Button
+                                    href="#"
+                                    className={classes.navLink}
+                                    onClick={e => e.preventDefault()}
+                                    color="transparent"
+                                  >
+                                    C#
+                                  </Button>
+                                </Tooltip>
+                              </ListItem>
+                            </Fragment>
+                          ),
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. I will be the
+                              leader of a company that ends up being worth
+                              billions of dollars, because I got the answers. I
+                              understand culture. I am the nucleus. I think
+                              that’s a responsibility that I have, to push
+                              possibilities, to show people, this is the level
+                              that things could be at.
+                            </p>
+                          ),
+                        },
+                        {
+                          tabName: (
+                            <Fragment>
+                              <ListItem className={classes.listItem}>
+                                <Tooltip
+                                  id="Laravel"
+                                  title="Laravel"
+                                  placement={
+                                    typeof window !== "undefined" &&
+                                    window.innerWidth > 959
+                                      ? "top"
+                                      : "left"
+                                  }
+                                  classes={{ tooltip: classes.tooltip }}
+                                >
+                                  <Button
+                                    href="#"
+                                    className={classes.navLink}
+                                    onClick={e => e.preventDefault()}
+                                    color="transparent"
+                                  >
+                                    <FaPhp />
+                                  </Button>
+                                </Tooltip>
+                              </ListItem>
+                            </Fragment>
+                          ),
+                          tabContent: (
+                            <p className={classes.textCenter}>
+                              I think that’s a responsibility that I have, to
+                              push possibilities, to show people, this is the
+                              level that things could be at. I will be the
+                              leader of a company that ends up being worth
+                              billions of dollars, because I got the answers. I
+                              understand culture. I am the nucleus. I think
+                              that’s a responsibility that I have, to push
+                              possibilities, to show people, this is the level
+                              that things could be at.
+                            </p>
+                          ),
+                        },
+                      ]}
+                    />
                   </GridItem>
                 </GridContainer>
               </div>
