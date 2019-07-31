@@ -25,6 +25,7 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Footer from "components/Footer/Footer.jsx"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
+import Grid from "@material-ui/core/Grid"
 import Button from "components/CustomButtons/Button.jsx"
 import clsx from "clsx"
 import Card from "@material-ui/core/Card"
@@ -205,82 +206,332 @@ class ProjectsPage extends React.Component {
                           ),
                           tabContent: (
                             <Fragment>
-                              <Card className={classes.card}>
-                                <CardHeader
-                                  avatar={
-                                    <Avatar
-                                      aria-label="devConnector"
-                                      className={classes.avatar}
-                                    >
-                                      D
-                                    </Avatar>
-                                  }
-                                  title="DevConnector"
-                                  subheader="Social site for developers"
-                                />
-                                <CardMedia
-                                  className={classes.CardMedia}
-                                  image="../../assets/img/communication.jpg"
-                                  title="DevConnector"
-                                />
-                                <CardContent>
-                                  <Typography
-                                    variant="body2"
-                                    color="textSecondary"
-                                    component="p"
-                                  >
-                                    Full stack Application <br />
-                                    <strong>Technologies:</strong>MongoDB -
-                                    Mongoose - NodeJS - ReactJS - Redux - JWT
-                                    -Bcrypt
-                                    <br />
-                                    Create a profile, share git repos, add
-                                    posts, likes, comments...
-                                  </Typography>
-                                </CardContent>
-                                <CardActions disableSpacing>
-                                  <Tooltip
-                                    id="MERN"
-                                    title="See code"
-                                    placement={
-                                      typeof window !== "undefined" &&
-                                      window.innerWidth > 959
-                                        ? "bottom"
-                                        : "left"
-                                    }
-                                    classes={{ tooltip: classes.tooltip }}
-                                  >
-                                    <IconButton
-                                      aria-label="See code"
-                                      href="https://github.com/alvaroserrrano/devconnector"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      <FaGithub />
-                                    </IconButton>
-                                  </Tooltip>
-                                  <Tooltip
-                                    id="MERN"
-                                    title="Live site"
-                                    placement={
-                                      typeof window !== "undefined" &&
-                                      window.innerWidth > 959
-                                        ? "bottom"
-                                        : "left"
-                                    }
-                                    classes={{ tooltip: classes.tooltip }}
-                                  >
-                                    <IconButton
-                                      aria-label="Live site"
-                                      href="https://dev-connector-alvaro-serrano.herokuapp.com/"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      <FaShare />
-                                    </IconButton>
-                                  </Tooltip>
-                                </CardActions>
-                              </Card>
+                              <Grid container spacing={3}>
+                                <Grid item xs={12} sm={6} spacing={3}>
+                                  <Card className={classes.card}>
+                                    <CardHeader
+                                      avatar={
+                                        <Avatar
+                                          aria-label="codeBlog"
+                                          className={classes.avatar}
+                                        >
+                                          C
+                                        </Avatar>
+                                      }
+                                      title="CodeBlog"
+                                      subheader="Coding blog"
+                                    />
+
+                                    <CardContent>
+                                      <Typography
+                                        variant="body2"
+                                        color="textSecondary"
+                                        component="p"
+                                      >
+                                        Full stack Application <br />
+                                        <br />
+                                        <strong>Technologies:</strong>Gatsby -
+                                        Markdown - Graphql
+                                        <br />
+                                        <br />
+                                        Code splitting - Image optimization -
+                                        SEO - Prefetching
+                                      </Typography>
+                                    </CardContent>
+                                    <CardActions disableSpacing>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="See code"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="See code"
+                                          href="https://github.com/alvaroserrrano/CodeBlog"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaGithub />
+                                        </IconButton>
+                                      </Tooltip>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Live site"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Live site"
+                                          href="https://codingblog-alvaro-serrano.netlify.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaShare />
+                                        </IconButton>
+                                      </Tooltip>
+                                    </CardActions>
+                                  </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                  <Card className={classes.card}>
+                                    <CardHeader
+                                      avatar={
+                                        <Avatar
+                                          aria-label="socialApes"
+                                          className={classes.avatar}
+                                        >
+                                          S
+                                        </Avatar>
+                                      }
+                                      title="socialApes"
+                                      subheader="Social media site"
+                                    />
+
+                                    <CardContent>
+                                      <Typography
+                                        variant="body2"
+                                        color="textSecondary"
+                                        component="p"
+                                      >
+                                        Full stack Application <br />
+                                        <br />
+                                        <strong>Technologies:</strong>Firebase -
+                                        Cloud Functions - NodeJS - ReactJS -
+                                        Redux
+                                        <br />
+                                        <br />
+                                        Create a profile, add posts, likes,
+                                        comments...
+                                      </Typography>
+                                    </CardContent>
+                                    <CardActions disableSpacing>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Client-side code"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Client side"
+                                          href="https://github.com/alvaroserrrano/SocialApeClient"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaGithub />
+                                        </IconButton>
+                                      </Tooltip>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Server-side code"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Server-side code"
+                                          href="https://github.com/alvaroserrrano/SocialMediaApp"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaGithub />
+                                        </IconButton>
+                                      </Tooltip>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Live site"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Live site"
+                                          href="https://socialape-44490.firebaseapp.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaShare />
+                                        </IconButton>
+                                      </Tooltip>
+                                    </CardActions>
+                                  </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                  <Card className={classes.card}>
+                                    <CardHeader
+                                      avatar={
+                                        <Avatar
+                                          aria-label="devConnector"
+                                          className={classes.avatar}
+                                        >
+                                          S
+                                        </Avatar>
+                                      }
+                                      title="devConnector"
+                                      subheader="Social site for developers"
+                                    />
+
+                                    <CardContent>
+                                      <Typography
+                                        variant="body2"
+                                        color="textSecondary"
+                                        component="p"
+                                      >
+                                        Full stack Application <br />
+                                        <br />
+                                        <strong>Technologies:</strong>MongoDB -
+                                        Mongoose - NodeJs - JWT - BCrypt - React
+                                        - Redux
+                                        <br />
+                                        <br />
+                                        Create a profile, share git
+                                        repositories, add posts, comments,
+                                        likes...
+                                      </Typography>
+                                    </CardContent>
+                                    <CardActions disableSpacing>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Client-side code"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Client side"
+                                          href="https://github.com/alvaroserrrano/devConnector"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaGithub />
+                                        </IconButton>
+                                      </Tooltip>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Server-side code"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Live code"
+                                          href="https://dev-connector-alvaro-serrano.herokuapp.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaShare />
+                                        </IconButton>
+                                      </Tooltip>
+                                    </CardActions>
+                                  </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                  <Card className={classes.card}>
+                                    <CardHeader
+                                      avatar={
+                                        <Avatar
+                                          aria-label="devConnector"
+                                          className={classes.avatar}
+                                        >
+                                          CG
+                                        </Avatar>
+                                      }
+                                      title="codingGigs"
+                                      subheader="Job finder app"
+                                    />
+
+                                    <CardContent>
+                                      <Typography
+                                        variant="body2"
+                                        color="textSecondary"
+                                        component="p"
+                                      >
+                                        Full stack Application <br />
+                                        <br />
+                                        <strong>Technologies:</strong>HTML - CSS
+                                        - Sequelize - PostgreSQL - NodeJS -
+                                        Handlebars
+                                        <br />
+                                        <br />
+                                        Add new jobs and view current jobs
+                                        offers matching your skills
+                                      </Typography>
+                                    </CardContent>
+                                    <CardActions disableSpacing>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Client-side code"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="See code"
+                                          href="https://github.com/alvaroserrrano/gigs-job-search"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaGithub />
+                                        </IconButton>
+                                      </Tooltip>
+                                      <Tooltip
+                                        id="MERN"
+                                        title="Live site"
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label="Server-side code"
+                                          href="https://dev-job-search-alvaro-serrano.herokuapp.com/"
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          <FaShare />
+                                        </IconButton>
+                                      </Tooltip>
+                                    </CardActions>
+                                  </Card>
+                                </Grid>
+                              </Grid>
                             </Fragment>
                           ),
                         },
