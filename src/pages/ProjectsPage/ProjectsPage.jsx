@@ -14,6 +14,7 @@ import {
   FaReact,
   FaDatabase,
   FaPhp,
+  FaShare,
 } from "react-icons/fa"
 // core components
 import ListItem from "@material-ui/core/ListItem"
@@ -228,19 +229,56 @@ class ProjectsPage extends React.Component {
                                     color="textSecondary"
                                     component="p"
                                   >
-                                    This is a social site for developers.This is
-                                    a social site for developers.This is a
-                                    social site for developers.This is a social
-                                    site for developers
+                                    Full stack Application <br />
+                                    <strong>Technologies:</strong>MongoDB -
+                                    Mongoose - NodeJS - ReactJS - Redux - JWT
+                                    -Bcrypt
+                                    <br />
+                                    Create a profile, share git repos, add
+                                    posts, likes, comments...
                                   </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
-                                  <IconButton aria-label="Add to favorites">
-                                    <FavoriteIcon />
-                                  </IconButton>
-                                  <IconButton aria-label="Share">
-                                    <ShareIcon />
-                                  </IconButton>
+                                  <Tooltip
+                                    id="MERN"
+                                    title="See code"
+                                    placement={
+                                      typeof window !== "undefined" &&
+                                      window.innerWidth > 959
+                                        ? "bottom"
+                                        : "left"
+                                    }
+                                    classes={{ tooltip: classes.tooltip }}
+                                  >
+                                    <IconButton
+                                      aria-label="See code"
+                                      href="https://github.com/alvaroserrrano/devconnector"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <FaGithub />
+                                    </IconButton>
+                                  </Tooltip>
+                                  <Tooltip
+                                    id="MERN"
+                                    title="Live site"
+                                    placement={
+                                      typeof window !== "undefined" &&
+                                      window.innerWidth > 959
+                                        ? "bottom"
+                                        : "left"
+                                    }
+                                    classes={{ tooltip: classes.tooltip }}
+                                  >
+                                    <IconButton
+                                      aria-label="Live site"
+                                      href="https://dev-connector-alvaro-serrano.herokuapp.com/"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <FaShare />
+                                    </IconButton>
+                                  </Tooltip>
                                 </CardActions>
                               </Card>
                             </Fragment>
