@@ -16,7 +16,6 @@ import {
   FaPhp,
 } from "react-icons/fa"
 // core components
-
 import ListItem from "@material-ui/core/ListItem"
 import Tooltip from "@material-ui/core/Tooltip"
 import Parallax from "components/Parallax/Parallax.jsx"
@@ -26,6 +25,19 @@ import Footer from "components/Footer/Footer.jsx"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import Button from "components/CustomButtons/Button.jsx"
+import clsx from "clsx"
+import Card from "@material-ui/core/Card"
+import CardHeader from "@material-ui/core/CardHeader"
+import CardMedia from "@material-ui/core/CardMedia"
+import CardContent from "@material-ui/core/CardContent"
+import CardActions from "@material-ui/core/CardActions"
+import Collapse from "@material-ui/core/Collapse"
+import Avatar from "@material-ui/core/Avatar"
+import IconButton from "@material-ui/core/IconButton"
+import Typography from "@material-ui/core/Typography"
+import FavoriteIcon from "@material-ui/icons/Favorite"
+import ShareIcon from "@material-ui/icons/Share"
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 //Images
 import me from "assets/img/me.jpg"
 
@@ -192,17 +204,45 @@ class ProjectsPage extends React.Component {
                           ),
                           tabContent: (
                             <Fragment>
-                              <p className={classes.textCenter}>
-                                I think that’s a responsibility that I have, to
-                                push possibilities, to show people, this is the
-                                level that things could be at. So when you get
-                                something that has the name Kanye West on it,
-                                it’s supposed to be pushing the furthest
-                                possibilities. I will be the leader of a company
-                                that ends up being worth billions of dollars,
-                                because I got the answers. I understand culture.
-                                I am the nucleus.
-                              </p>
+                              <Card className={classes.card}>
+                                <CardHeader
+                                  avatar={
+                                    <Avatar
+                                      aria-label="devConnector"
+                                      className={classes.avatar}
+                                    >
+                                      D
+                                    </Avatar>
+                                  }
+                                  title="DevConnector"
+                                  subheader="Social site for developers"
+                                />
+                                <CardMedia
+                                  className={classes.CardMedia}
+                                  image="../../assets/img/communication.jpg"
+                                  title="DevConnector"
+                                />
+                                <CardContent>
+                                  <Typography
+                                    variant="body2"
+                                    color="textSecondary"
+                                    component="p"
+                                  >
+                                    This is a social site for developers.This is
+                                    a social site for developers.This is a
+                                    social site for developers.This is a social
+                                    site for developers
+                                  </Typography>
+                                </CardContent>
+                                <CardActions disableSpacing>
+                                  <IconButton aria-label="Add to favorites">
+                                    <FavoriteIcon />
+                                  </IconButton>
+                                  <IconButton aria-label="Share">
+                                    <ShareIcon />
+                                  </IconButton>
+                                </CardActions>
+                              </Card>
                             </Fragment>
                           ),
                         },
