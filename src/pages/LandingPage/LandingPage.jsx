@@ -49,9 +49,13 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Full Stack Web Developer</h1>
-                <h4>
-                  Computer Science Student at College of Engineering and Applied
-                  Sciences at Western Michigan University
+                {/* #57BFC7 */}
+                {/* #D1366D */}
+                <h4 style={{ color: "#00b200" }}>
+                  <strong>
+                    Computer Science Student at College of Engineering and
+                    Applied Sciences at Western Michigan University
+                  </strong>
                 </h4>
                 <br />
                 <Button
