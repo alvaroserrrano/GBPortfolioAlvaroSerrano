@@ -27,19 +27,13 @@ import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
 import Grid from "@material-ui/core/Grid"
 import Button from "components/CustomButtons/Button.jsx"
-import clsx from "clsx"
 import Card from "@material-ui/core/Card"
 import CardHeader from "@material-ui/core/CardHeader"
-import CardMedia from "@material-ui/core/CardMedia"
 import CardContent from "@material-ui/core/CardContent"
 import CardActions from "@material-ui/core/CardActions"
-import Collapse from "@material-ui/core/Collapse"
 import Avatar from "@material-ui/core/Avatar"
 import IconButton from "@material-ui/core/IconButton"
 import Typography from "@material-ui/core/Typography"
-import FavoriteIcon from "@material-ui/icons/Favorite"
-import ShareIcon from "@material-ui/icons/Share"
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 //Images
 import me from "assets/img/me.jpg"
 
@@ -241,7 +235,7 @@ class ProjectsPage extends React.Component {
                                     <CardActions disableSpacing>
                                       <Tooltip
                                         id="MERN"
-                                        title="Client-side code"
+                                        title="See code"
                                         placement={
                                           typeof window !== "undefined" &&
                                           window.innerWidth > 959
@@ -564,8 +558,417 @@ class ProjectsPage extends React.Component {
                           ),
                           tabContent: (
                             <Grid container spacing={3}>
-                              <Grid item xs={12} sm={6} />
-                              <Grid item xs={12} sm={6} />
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="Food2Fork"
+                                        className={classes.avatar}
+                                      >
+                                        F2F
+                                      </Avatar>
+                                    }
+                                    title="Forkify  "
+                                    subheader="Recipe finder app"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Data fetched from Food2Fork API <br />
+                                      <br />
+                                      <strong>Technologies:</strong>HTML - CSS -
+                                      Bootstrap - ES6 - Async Javascript
+                                      <br />
+                                      <br />
+                                      Search for recipes, add to the cart, see
+                                      details, check other recipes made by that
+                                      chef...
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/forkify"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Server-side code"
+                                        href="https://js-forkify-alvaro-serrano.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="BudgetController"
+                                        className={classes.avatar}
+                                      >
+                                        BC
+                                      </Avatar>
+                                    }
+                                    title="Budget Controller"
+                                    subheader="Manage your finances"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Algorithms and calculation based on user
+                                      input <br />
+                                      <br />
+                                      <strong>Technologies:</strong>HTML - CSS -
+                                      Javascript - Babel - Webpack
+                                      <br />
+                                      <br />
+                                      Take control over your incomes and
+                                      expenses
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/budgetApp/tree/master"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Server-side code"
+                                        href="https://js-budget-controller-alvaro-serrano.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="CapitalLookup"
+                                        className={classes.avatar}
+                                      >
+                                        C
+                                      </Avatar>
+                                    }
+                                    title="Capital lookup"
+                                    subheader="JSON Autocompletion"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      JSON autocompletion for capital lookup in
+                                      the US <br />
+                                      <br />
+                                      <strong>Technologies:</strong>HTML - CSS -
+                                      ES6 - Javascript - Babel - Webpack
+                                      <br />
+                                      <br />
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/autocomplete-capital-search"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Server-side code"
+                                        href="https://capital-lookup-auto-complete.netlify.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                            </Grid>
+                          ),
+                        },
+                        {
+                          tabName: (
+                            <Fragment>
+                              <ListItem className={classes.listItem}>
+                                <Tooltip
+                                  id="React"
+                                  title="React"
+                                  placement={
+                                    typeof window !== "undefined" &&
+                                    window.innerWidth > 959
+                                      ? "top"
+                                      : "left"
+                                  }
+                                  classes={{ tooltip: classes.tooltip }}
+                                >
+                                  <Button
+                                    href="#"
+                                    className={classes.navLink}
+                                    onClick={e => e.preventDefault()}
+                                    color="transparent"
+                                  >
+                                    <FaReact />
+                                  </Button>
+                                </Tooltip>
+                              </ListItem>
+                            </Fragment>
+                          ),
+                          tabContent: (
+                            <Grid container justify="center">
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="Ecommerce"
+                                        className={classes.avatar}
+                                      >
+                                        P
+                                      </Avatar>
+                                    }
+                                    title="Ecommerce"
+                                    subheader="Buy cell phones"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Ecommerce site for buying cellphones
+                                      <br />
+                                      <strong>Technologies:</strong>React - JSX
+                                      - Styled Components
+                                      <br />
+                                      Frontend application. See phones, add them
+                                      to the cart, see prices and taxes
+                                      applied...
+                                      <br />
+                                      Data fetched from a JSON object
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/EcommerceSite/tree/master/ecommerce"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Live site"
+                                        href="https://react-ecommerce-alvaro-serrano.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="Beach Resort"
+                                        className={classes.avatar}
+                                      >
+                                        BR
+                                      </Avatar>
+                                    }
+                                    title="Beach Resort"
+                                    subheader="Deluxe rooms"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Resort site
+                                      <br />
+                                      <strong>Technologies:</strong>React - JSX
+                                      - Contentful
+                                      <br />
+                                      Frontend application. Data retrieved from
+                                      a CMS
+                                      <br />
+                                      Filter rooms based on your preferences
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/react_resorts"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Live site"
+                                        href="https://resorts-alvaro-serrano.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
                             </Grid>
                           ),
                         },
@@ -597,16 +1000,60 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <p className={classes.textCenter}>
-                              think that’s a responsibility that I have, to push
-                              possibilities, to show people, this is the level
-                              that things could be at. So when you get something
-                              that has the name Kanye West on it, it’s supposed
-                              to be pushing the furthest possibilities. I will
-                              be the leader of a company that ends up being
-                              worth billions of dollars, because I got the
-                              answers. I understand culture. I am the nucleus.
-                            </p>
+                            <Grid container spacing={3} justify="center">
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="PostFix App"
+                                        className={classes.avatar}
+                                      >
+                                        P
+                                      </Avatar>
+                                    }
+                                    title="Postfix"
+                                    subheader="Random Access on Binary Files"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Java application that reads data from
+                                      three random access (binary) files and
+                                      reconstructs the corresponding postfix
+                                      expressions (based on what was read from
+                                      the input file).
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/PostFixExpressions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                            </Grid>
                           ),
                         },
                         {
@@ -637,17 +1084,60 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. I will be the
-                              leader of a company that ends up being worth
-                              billions of dollars, because I got the answers. I
-                              understand culture. I am the nucleus. I think
-                              that’s a responsibility that I have, to push
-                              possibilities, to show people, this is the level
-                              that things could be at.
-                            </p>
+                            <Grid container spacing={3} justify="center">
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="TournamentTracker"
+                                        className={classes.avatar}
+                                      >
+                                        P
+                                      </Avatar>
+                                    }
+                                    title="Tournament Tracker"
+                                    subheader="Desktop application"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Create a tournament, add members to a
+                                      team, configure matchups...
+                                      <br />
+                                      Interfaces || Email || SQL Server || Text
+                                      Files || Data storage and retrieval || OOP
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/TournamentTracker"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                            </Grid>
                           ),
                         },
                         {
@@ -678,17 +1168,58 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <p className={classes.textCenter}>
-                              I think that’s a responsibility that I have, to
-                              push possibilities, to show people, this is the
-                              level that things could be at. I will be the
-                              leader of a company that ends up being worth
-                              billions of dollars, because I got the answers. I
-                              understand culture. I am the nucleus. I think
-                              that’s a responsibility that I have, to push
-                              possibilities, to show people, this is the level
-                              that things could be at.
-                            </p>
+                            <Grid container justify="center">
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="FreecodeGram"
+                                        className={classes.avatar}
+                                      >
+                                        P
+                                      </Avatar>
+                                    }
+                                    title="Freecodegram"
+                                    subheader="Instagram clone"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Instagram clone
+                                      <br />
+                                      Add posts, comments, likes...
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/freeCodeGram"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                            </Grid>
                           ),
                         },
                       ]}
