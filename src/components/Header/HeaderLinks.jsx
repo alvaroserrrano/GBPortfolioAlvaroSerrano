@@ -26,23 +26,9 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="About"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent",
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/resume" className={classes.dropdownLink}>
-              Resume
-            </Link>,
-            <Link to="/blog" className={classes.dropdownLink}>
-              Blog
-            </Link>,
-          ]}
-        />
+        <Button href="/resume" color="transparent" className={classes.navLink}>
+          <WebAsset className={classes.icons} /> Resume
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
