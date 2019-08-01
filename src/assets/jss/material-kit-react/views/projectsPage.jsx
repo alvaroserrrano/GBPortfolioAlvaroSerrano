@@ -1,7 +1,7 @@
 import { container } from "assets/jss/material-kit-react.jsx"
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx"
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx"
-
+import { cardTitle, title } from "assets/jss/material-kit-react.jsx"
 const signupPageStyle = {
   container,
   profile: {
@@ -20,7 +20,7 @@ const signupPageStyle = {
     textDecoration: "none",
   },
   title: {
-    marginTop: "30px",
+    marginTop: "-100px",
     minHeight: "32px",
     textDecoration: "none",
   },
@@ -92,6 +92,36 @@ const signupPageStyle = {
   },
   expand: {
     transform: "rotate(180deg)",
+  },
+  section: {
+    padding: "70px 0",
+    textAlign: "center",
+  },
+  ...imagesStyle,
+  itemGrid: {
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  cardTitle,
+  smallTitle: {
+    color: "#6c757d",
+  },
+  justifyCenter: {
+    justifyContent: "center !important",
+  },
+  socials: {
+    marginTop: "0",
+    width: "100%",
+    transform: "none",
+    left: "0",
+    top: "0",
+    height: "100%",
+    lineHeight: "41px",
+    fontSize: "20px",
+    color: "#999",
+  },
+  margin5: {
+    margin: "5px",
   },
   avatar: {
     backgroundColor: "#7a0000",

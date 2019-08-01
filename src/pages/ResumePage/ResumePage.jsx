@@ -40,6 +40,7 @@ import mongo from "assets/img/mongo.jpeg"
 import postgre from "assets/img/postgre.png"
 import node from "assets/img/node.png"
 import kali from "assets/img/kali.png"
+import git from "assets/img/git.gif"
 import resumePageStyle from "assets/jss/material-kit-react/views/resumePage.jsx"
 
 class ProfilePage extends React.Component {
@@ -236,6 +237,7 @@ class ProfilePage extends React.Component {
                                 src={communication}
                                 className={navImageClasses}
                               />
+
                               <img
                                 alt="..."
                                 src={polyglot}
@@ -293,6 +295,11 @@ class ProfilePage extends React.Component {
                               <img
                                 alt="..."
                                 src={node}
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src={git}
                                 className={navImageClasses}
                               />
                             </GridItem>

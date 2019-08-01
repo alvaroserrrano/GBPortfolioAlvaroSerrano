@@ -40,6 +40,7 @@ import me from "assets/img/me.jpg"
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
 import PaginationLinks from "./Projects/PaginationLinks"
+import TeamSection from "../../pages/LandingPage/Sections/TeamSection"
 class ProjectsPage extends React.Component {
   constructor(props) {
     super(props)
@@ -154,7 +155,7 @@ class ProjectsPage extends React.Component {
                   </strong>
                 </p>
               </div>
-
+              <TeamSection />
               <div className={classes.container}>
                 <GridContainer justify="center" className={classes.navGroup}>
                   <GridItem xs={12} sm={12} md={6}>
