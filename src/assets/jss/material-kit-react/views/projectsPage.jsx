@@ -1,7 +1,7 @@
 import { container } from "assets/jss/material-kit-react.jsx"
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx"
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx"
-import { cardTitle, title } from "assets/jss/material-kit-react.jsx"
+import { cardTitle } from "assets/jss/material-kit-react.jsx"
 const signupPageStyle = {
   container,
   profile: {

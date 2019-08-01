@@ -39,7 +39,6 @@ import me from "assets/img/me.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
-import PaginationLinks from "./Projects/PaginationLinks"
 import TeamSection from "../../pages/LandingPage/Sections/TeamSection"
 class ProjectsPage extends React.Component {
   constructor(props) {
