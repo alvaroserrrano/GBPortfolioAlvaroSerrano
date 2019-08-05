@@ -36,17 +36,12 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="/projects" className={classes.block} target="_blank">
+              <a href="/projects" className={classes.block}>
                 Projects
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="/blog" className={classes.block} target="_blank">
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a href="/resume" className={classes.block} target="_blank">
+              <a href="/resume" className={classes.block}>
                 Resume
               </a>
             </ListItem>
