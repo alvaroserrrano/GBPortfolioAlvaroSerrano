@@ -169,6 +169,8 @@ class ProjectsPage extends React.Component {
                   <GridItem xs={12} sm={12} md={6}>
                     <CustomTabs
                       plainTabs
+                      scrollButtons
+                      variant="scrollable"
                       className={classes.list}
                       headerColor="success"
                       tabs={[

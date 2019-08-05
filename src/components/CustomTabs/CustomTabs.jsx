@@ -46,6 +46,7 @@ class CustomTabs extends React.Component {
           ) : null}
           <Tabs
             value={this.state.value}
+            variant="scrollable"
             onChange={this.handleChange}
             classes={{
               root: classes.tabsRoot,
