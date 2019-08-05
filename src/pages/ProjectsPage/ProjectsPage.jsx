@@ -159,7 +159,9 @@ class ProjectsPage extends React.Component {
                 <GridContainer justify="center" className={classes.navGroup}>
                   <GridItem xs={12} sm={12} md={6}>
                     <div className={classes.title}>
-                      <h3>Projects</h3>
+                      <h3>
+                        <strong>Projects</strong>
+                      </h3>
                     </div>
                   </GridItem>
                 </GridContainer>
@@ -168,7 +170,7 @@ class ProjectsPage extends React.Component {
                     <CustomTabs
                       plainTabs
                       className={classes.list}
-                      headerColor="primary"
+                      headerColor="success"
                       tabs={[
                         {
                           tabName: (

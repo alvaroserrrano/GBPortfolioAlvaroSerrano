@@ -15,11 +15,15 @@ const signupPageStyle = {
   },
   name: {
     marginTop: "-80px",
+    color: "#00b200",
   },
   link: {
     textDecoration: "none",
   },
   title: {
+    color: "#00b200",
+    fontWeight: "bold",
+    fontSize: "52 px",
     marginTop: "-100px",
     minHeight: "32px",
     textDecoration: "none",
@@ -44,7 +48,7 @@ const signupPageStyle = {
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
-    color: "#999",
+    color: "#00b200",
     textAlign: "center !important",
   },
   listItem: {
@@ -125,6 +129,13 @@ const signupPageStyle = {
   },
   avatar: {
     backgroundColor: "#7a0000",
+  },
+  tooltip: {
+    backgroundColor: "#00b200",
+    fontSize: "16px",
+    fontWeight: "bold",
+    color: "#000",
+    marginBottom: "30px",
   },
 }
 

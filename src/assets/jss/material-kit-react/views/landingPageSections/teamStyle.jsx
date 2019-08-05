@@ -50,7 +50,7 @@ const teamStyle = {
   },
   tooltip: {
     backgroundColor: "#00b200",
-    fontSize: "20px",
+    fontSize: "16px",
     fontWeight: "bold",
     color: "#000",
   },
