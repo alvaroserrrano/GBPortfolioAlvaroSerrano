@@ -14,8 +14,9 @@ import FavoriteIcon from "@material-ui/icons/Favorite"
 import ShareIcon from "@material-ui/icons/Share"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import MoreVertIcon from "@material-ui/icons/MoreVert"
+import { withStyles } from "@material-ui/core"
 
-const useStyles = {
+const styles = {
   card: {
     maxWidth: 345,
   },
@@ -35,8 +36,8 @@ const useStyles = {
   },
 }
 
-export default function RecipeReviewCard() {
-  const classes = useStyles()
+function RecipeReviewCard(props) {
+  const { classes } = props
   const [expanded, setExpanded] = React.useState(false)
 
   function handleExpandClick() {
@@ -123,3 +124,5 @@ export default function RecipeReviewCard() {
     </Card>
   )
 }
+
+export default withStyles(styles)(RecipeReviewCard)

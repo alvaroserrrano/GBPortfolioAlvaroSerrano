@@ -6,7 +6,6 @@ import "assets/scss/material-kit-react.scss?v=1.4.0"
 import "typeface-roboto"
 import "typeface-roboto-slab"
 // pages for this product
-import Components from "./Components/Components.jsx"
 import LandingPage from "./LandingPage/LandingPage.jsx"
 import ResumePage from "./ResumePage/ResumePage.jsx"
 import ProjectsPage from "./ProjectsPage/ProjectsPage.jsx"
