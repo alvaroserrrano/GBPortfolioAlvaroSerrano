@@ -89,6 +89,9 @@ const signupPageStyle = {
   },
   card: {
     maxWidth: 345,
+    backgroundColor: "#757575",
+    marginTop: "25px",
+    marginBottom: "25px",
   },
   media: {
     height: 0,
@@ -122,13 +125,14 @@ const signupPageStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999",
+    color: "#6c757d",
   },
   margin5: {
     margin: "5px",
   },
   avatar: {
-    backgroundColor: "#7a0000",
+    color: "#000",
+    backgroundColor: "#00b200",
   },
   tooltip: {
     backgroundColor: "#00b200",

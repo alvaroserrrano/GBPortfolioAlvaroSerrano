@@ -201,8 +201,14 @@ class ProjectsPage extends React.Component {
                           ),
                           tabContent: (
                             <Fragment>
-                              <Grid container spacing={3}>
-                                <Grid item xs={12} sm={6}>
+                              <Grid
+                                container
+                                spacing={3}
+                                direction="column"
+                                justify="center"
+                                alignItems="center"
+                              >
+                                <Grid item xs={12} sm={6} alignItems="center">
                                   <Card className={classes.card}>
                                     <CardHeader
                                       avatar={
@@ -559,7 +565,13 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <Grid container spacing={3}>
+                            <Grid
+                              container
+                              spacing={3}
+                              direction="column"
+                              justify="center"
+                              alignItems="center"
+                            >
                               <Grid item xs={12} sm={6}>
                                 <Card className={classes.card}>
                                   <CardHeader
@@ -817,7 +829,14 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <Grid container justify="center">
+                            <Grid
+                              container
+                              spacing={3}
+                              justify="center"
+                              direction="column"
+                              justify="center"
+                              alignItems="center"
+                            >
                               <Grid item xs={12} sm={6}>
                                 <Card className={classes.card}>
                                   <CardHeader
@@ -1002,7 +1021,13 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <Grid container spacing={3} justify="center">
+                            <Grid
+                              container
+                              spacing={3}
+                              direction="column"
+                              justify="center"
+                              alignItems="center"
+                            >
                               <Grid item xs={12} sm={6}>
                                 <Card className={classes.card}>
                                   <CardHeader
@@ -1086,7 +1111,14 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <Grid container spacing={3} justify="center">
+                            <Grid
+                              container
+                              container
+                              spacing={3}
+                              direction="column"
+                              justify="center"
+                              alignItems="center"
+                            >
                               <Grid item xs={12} sm={6}>
                                 <Card className={classes.card}>
                                   <CardHeader
@@ -1170,7 +1202,13 @@ class ProjectsPage extends React.Component {
                             </Fragment>
                           ),
                           tabContent: (
-                            <Grid container justify="center">
+                            <Grid
+                              container
+                              spacing={3}
+                              direction="column"
+                              justify="center"
+                              alignItems="center"
+                            >
                               <Grid item xs={12} sm={6}>
                                 <Card className={classes.card}>
                                   <CardHeader
@@ -1229,10 +1267,10 @@ class ProjectsPage extends React.Component {
                   </GridItem>
                 </GridContainer>
               </div>
-              <Footer />
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
