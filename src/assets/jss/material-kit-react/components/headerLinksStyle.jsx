@@ -113,6 +113,13 @@ const headerLinksStyle = theme => ({
   marginRight5: {
     marginRight: "5px",
   },
+  tooltip: {
+    backgroundColor: "#00b200",
+    fontSize: "16px",
+    fontWeight: "bold",
+    color: "#000",
+    marginBottom: "20px",
+  },
 })
 
 export default headerLinksStyle

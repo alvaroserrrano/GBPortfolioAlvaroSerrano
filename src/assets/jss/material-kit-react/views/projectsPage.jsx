@@ -62,7 +62,7 @@ const signupPageStyle = {
   },
   ...imagesStyle,
   main: {
-    background: "#FFFFFF",
+    background: "#353a3f",
     position: "relative",
     zIndex: "3",
   },

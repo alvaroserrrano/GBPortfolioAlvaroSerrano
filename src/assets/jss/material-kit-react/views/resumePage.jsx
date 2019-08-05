@@ -16,15 +16,20 @@ const profilePageStyle = {
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
-    color: "#999",
+    color: "#00b200",
+    fontWeight: "bold",
+    fontSize: "1rem",
     textAlign: "center !important",
   },
   name: {
     marginTop: "-80px",
+    color: "#00b200",
+    fontWeight: "bold",
+    marginBottom: "30px",
   },
   ...imagesStyle,
   main: {
-    background: "#FFFFFF",
+    background: "#353a3f",
     position: "relative",
     zIndex: "3",
   },
@@ -36,6 +41,7 @@ const profilePageStyle = {
   },
   title: {
     ...title,
+    color: "#00b200",
     display: "inline-block",
     position: "relative",
     marginTop: "30px",
@@ -56,6 +62,13 @@ const profilePageStyle = {
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",
+  },
+  tooltip: {
+    backgroundColor: "#00b200",
+    fontSize: "16px",
+    fontWeight: "bold",
+    color: "#000",
+    marginBottom: "20px",
   },
 }
 
