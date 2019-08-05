@@ -8,9 +8,10 @@ const teamStyle = {
   },
   title: {
     ...title,
-    marginBottom: "1rem",
+    marginBottom: "1 rem",
     color: "#00b200",
-    marginTop: "30px",
+    fontWeight: "bold",
+    marginTop: "0.5 rem",
     minHeight: "32px",
     textDecoration: "none",
   },
@@ -21,16 +22,17 @@ const teamStyle = {
   },
   cardTitle,
   smallTitle: {
-    color: "#6c757d",
+    color: "#00b200",
+    fontWeight: "bold",
   },
   description: {
-    color: "#999",
+    color: "#e0e0e0",
   },
   justifyCenter: {
     justifyContent: "center !important",
   },
   socials: {
-    marginTop: "0",
+    marginTop: "0.5 rem",
     width: "100%",
     transform: "none",
     left: "0",
@@ -38,10 +40,19 @@ const teamStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999",
+    color: "#e0e0e0",
   },
   margin5: {
     margin: "5px",
+  },
+  navLink: {
+    backgroundColor: "#00b200",
+  },
+  tooltip: {
+    backgroundColor: "#00b200",
+    fontSize: "20px",
+    fontWeight: "bold",
+    color: "#000",
   },
 }
 

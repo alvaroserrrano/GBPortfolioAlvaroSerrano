@@ -7,14 +7,14 @@ const workStyle = {
   title: {
     ...title,
     marginBottom: "50px",
-    marginTop: "30px",
+    marginTop: "-90px",
     color: "#00b200",
     minHeight: "32px",
     textDecoration: "none",
     textAlign: "center",
   },
   description: {
-    color: "#999",
+    color: "#e0e0e0",
     textAlign: "center",
   },
   textCenter: {
@@ -23,6 +23,12 @@ const workStyle = {
   textArea: {
     marginRight: "15px",
     marginLeft: "15px",
+  },
+  tooltip: {
+    backgroundColor: "#00b200",
+    fontSize: "20px",
+    fontWeight: "bold",
+    color: "#000",
   },
 }
 

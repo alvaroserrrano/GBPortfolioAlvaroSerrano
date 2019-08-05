@@ -7,9 +7,9 @@ const productStyle = {
   },
   title: {
     ...title,
-    marginBottom: "1rem",
+    marginBottom: "1 rem",
     color: "#00b200",
-    marginTop: "30px",
+    marginTop: "1 rem",
     minHeight: "32px",
     textDecoration: "none",
   },

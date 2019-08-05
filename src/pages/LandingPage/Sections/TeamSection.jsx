@@ -45,7 +45,10 @@ class TeamSection extends React.Component {
                     className={imageClasses}
                   />
                 </GridItem>
-                <h4 className={classes.cardTitle}>
+                <h4
+                  className={classes.cardTitle}
+                  style={{ color: "#00b200", fontWeight: "bold" }}
+                >
                   DevConnector
                   <br />
                   <small className={classes.smallTitle}>
@@ -114,7 +117,10 @@ class TeamSection extends React.Component {
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img src={project2} alt="..." className={imageClasses} />
                 </GridItem>
-                <h4 className={classes.cardTitle}>
+                <h4
+                  className={classes.cardTitle}
+                  style={{ color: "#00b200", fontWeight: "bold" }}
+                >
                   Social Apes Site
                   <br />
                   <small className={classes.smallTitle}>Networking site</small>
@@ -194,7 +200,10 @@ class TeamSection extends React.Component {
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img src={project3} alt="..." className={imageClasses} />
                 </GridItem>
-                <h4 className={classes.cardTitle}>
+                <h4
+                  className={classes.cardTitle}
+                  style={{ color: "#00b200", fontWeight: "bold" }}
+                >
                   Coding Blog
                   <br />
                   <small className={classes.smallTitle}>Personal Blog</small>

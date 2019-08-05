@@ -11,6 +11,7 @@ import {
   boxShadow,
   drawerWidth,
 } from "assets/jss/material-kit-react.jsx"
+import { FaBold } from "react-icons/fa"
 
 const headerStyle = {
   appBar: {
@@ -57,7 +58,8 @@ const headerStyle = {
     fontSize: "18px",
     borderRadius: "3px",
     textTransform: "none",
-    color: "inherit",
+    color: "#00b200",
+    fontWeight: "bold",
     padding: "8px 16px",
     "&:hover,&:focus": {
       color: "inherit",
