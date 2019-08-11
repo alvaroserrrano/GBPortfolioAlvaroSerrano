@@ -35,14 +35,25 @@ function Footer({ ...props }) {
                 Learn more
               </a>
             </ListItem>
+
+            <ListItem className={classes.inlineBlock}>
+              <a href="/resume" className={classes.block}>
+                Resume
+              </a>
+            </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a href="/projects" className={classes.block}>
                 Projects
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="/resume" className={classes.block}>
-                Resume
+              <a
+                href="https://codingblog-alvaro-serrano.netlify.com"
+                target="_blank"
+                rel="noopener nonreferrer"
+                className={classes.block}
+              >
+                Blog
               </a>
             </ListItem>
           </List>

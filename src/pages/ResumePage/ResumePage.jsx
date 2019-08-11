@@ -20,7 +20,8 @@ import NavPills from "components/NavPills/NavPills.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
 import Tooltip from "@material-ui/core/Tooltip"
 //Images
-import me from "assets/img/me.jpg"
+import meblack from "assets/img/meblack.jpg"
+import me3 from "assets/img/me3.jpg"
 import secin from "assets/img/secin.jpeg"
 import unesmun from "assets/img/unesmun.png"
 import campus from "assets/img/campus.jpg"
@@ -73,7 +74,7 @@ class ProfilePage extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
                     <div>
-                      <img src={me} alt="..." className={imageClasses} />
+                      <img src={meblack} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
                       <h3 className={classes.title}>Alvaro Serrano Rivas</h3>
@@ -311,6 +312,9 @@ class ProfilePage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
+            {/* <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={6} />
+            </GridContainer> */}
           </div>
         </div>
         <Footer />

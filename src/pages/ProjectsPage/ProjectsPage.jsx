@@ -35,7 +35,7 @@ import Avatar from "@material-ui/core/Avatar"
 import IconButton from "@material-ui/core/IconButton"
 import Typography from "@material-ui/core/Typography"
 //Images
-import me from "assets/img/me.jpg"
+import meblack from "assets/img/meblack.jpg"
 
 import projectsPageStyle from "assets/jss/material-kit-react/views/projectsPage.jsx"
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx"
@@ -76,7 +76,7 @@ class ProjectsPage extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
                     <div>
-                      <img src={me} alt="..." className={imageClasses} />
+                      <img src={meblack} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
                       <h3 className={classes.title}>Alvaro Serrano Rivas</h3>

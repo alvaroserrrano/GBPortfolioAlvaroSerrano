@@ -40,6 +40,17 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Button
+          href="https://codingblog-alvaro-serrano.netlify.com/"
+          target="_blank"
+          rel="noopener nonreferrer"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <WebAsset className={classes.icons} /> Blog
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="linkedIn"
           title="Follow me on linkedin"
