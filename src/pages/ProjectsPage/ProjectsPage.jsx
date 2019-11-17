@@ -471,8 +471,8 @@ class ProjectsPage extends React.Component {
                                           C
                                         </Avatar>
                                       }
-                                      title='CodeBlog'
-                                      subheader='Coding blog'
+                                      title='FixAdvisor'
+                                      subheader='Tool Booking site '
                                     />
 
                                     <CardContent>
@@ -526,6 +526,80 @@ class ProjectsPage extends React.Component {
                                         <IconButton
                                           aria-label='Live site'
                                           href='https://fixadvisor-5547f.firebaseapp.com/auth/signin'
+                                          target='_blank'
+                                          rel='noopener noreferrer'
+                                        >
+                                          <FaShare />
+                                        </IconButton>
+                                      </Tooltip>
+                                    </CardActions>
+                                  </Card>
+                                </Grid>
+                                <Grid item xs={12} sm={6} spacing={3}>
+                                  <Card className={classes.card}>
+                                    <CardHeader
+                                      avatar={
+                                        <Avatar
+                                          aria-label='codeBlog'
+                                          className={classes.avatar}
+                                        >
+                                          C
+                                        </Avatar>
+                                      }
+                                      title='CodeBlog'
+                                      subheader='Coding blog'
+                                    />
+
+                                    <CardContent>
+                                      <Typography
+                                        variant='body2'
+                                        color='textSecondary'
+                                        component='p'
+                                      >
+                                        Full stack Application <br />
+                                        <br />
+                                        <strong>Technologies:</strong>Gatsby -
+                                        Graphql - Markdown
+                                        <br />
+                                        <br />
+                                        Coding and Cybersecurity blog
+                                      </Typography>
+                                    </CardContent>
+                                    <CardActions disableSpacing>
+                                      <Tooltip
+                                        id='MERN'
+                                        title='See code'
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label='See code'
+                                          href='https://github.com/alvaroserrrano/CodeBlog'
+                                          target='_blank'
+                                          rel='noopener noreferrer'
+                                        >
+                                          <FaGithub />
+                                        </IconButton>
+                                      </Tooltip>
+                                      <Tooltip
+                                        id='MERN'
+                                        title='Live site'
+                                        placement={
+                                          typeof window !== "undefined" &&
+                                          window.innerWidth > 959
+                                            ? "bottom"
+                                            : "left"
+                                        }
+                                        classes={{ tooltip: classes.tooltip }}
+                                      >
+                                        <IconButton
+                                          aria-label='Live site'
+                                          href='https://codingblog-alvaro-serrano.netlify.com/'
                                           target='_blank'
                                           rel='noopener noreferrer'
                                         >
