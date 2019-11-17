@@ -41,7 +41,7 @@ class TeamSection extends React.Component {
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                   <img
                     src={project4}
-                    alt="devConnector"
+                    alt='devConnector'
                     className={imageClasses}
                   />
                 </GridItem>
@@ -72,8 +72,8 @@ class TeamSection extends React.Component {
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
-                    id="Github"
-                    title="Code"
+                    id='Github'
+                    title='Code'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -82,17 +82,17 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://github.com/alvaroserrrano/devConnector"
-                      target="_blank"
-                      color="transparent"
+                      href='https://github.com/alvaroserrrano/devConnector'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaGithub />
                     </Button>
                   </Tooltip>
                   <Tooltip
-                    id="Live"
-                    title="Live site"
+                    id='Live'
+                    title='Live site'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -101,9 +101,9 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://dev-connector-alvaro-serrano.herokuapp.com/"
-                      target="_blank"
-                      color="transparent"
+                      href='https://dev-connector-alvaro-serrano.herokuapp.com/'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaArchive />
@@ -115,7 +115,7 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={project2} alt="..." className={imageClasses} />
+                  <img src={project2} alt='...' className={imageClasses} />
                 </GridItem>
                 <h4
                   className={classes.cardTitle}
@@ -136,8 +136,8 @@ class TeamSection extends React.Component {
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
-                    id="Github"
-                    title="Server-side"
+                    id='Github'
+                    title='Server-side'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -146,17 +146,17 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://github.com/alvaroserrrano/SocialMediaApp"
-                      target="_blank"
-                      color="transparent"
+                      href='https://github.com/alvaroserrrano/SocialMediaApp'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaGithub />
                     </Button>
                   </Tooltip>
                   <Tooltip
-                    id="Github"
-                    title="Client side"
+                    id='Github'
+                    title='Client side'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -165,17 +165,17 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://socialape-44490.firebaseapp.com/"
-                      target="_blank"
-                      color="transparent"
+                      href='https://socialape-44490.firebaseapp.com/'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaGithub />
                     </Button>
                   </Tooltip>
                   <Tooltip
-                    id="Live"
-                    title="Live site"
+                    id='Live'
+                    title='Live site'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -184,9 +184,9 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://github.com/alvaroserrrano/SocialApeClient"
-                      target="_blank"
-                      color="transparent"
+                      href='https://github.com/alvaroserrrano/SocialApeClient'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaArchive />
@@ -198,31 +198,33 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={project3} alt="..." className={imageClasses} />
+                  <img src={project3} alt='...' className={imageClasses} />
                 </GridItem>
                 <h4
                   className={classes.cardTitle}
                   style={{ color: "#00b200", fontWeight: "bold" }}
                 >
-                  Coding Blog
+                  Fix Advisor
                   <br />
-                  <small className={classes.smallTitle}>Personal Blog</small>
+                  <small className={classes.smallTitle}>
+                    Tools Booking Site
+                  </small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
                     <ul>
                       <li>
-                        Code spliting - Image optimization - Pull data from
-                        markdown files
+                        Internationalization - Validation - Filtering -
+                        Mailing...
                       </li>
-                      <li>Gatsby - Graphql</li>
+                      <li>Node - Sequelize - React - Redux - Graphql</li>
                     </ul>
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
                   <Tooltip
-                    id="Github"
-                    title="Code"
+                    id='Github'
+                    title='Code'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -231,9 +233,9 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://github.com/alvaroserrrano/CodeBlog"
-                      target="_blank"
-                      color="transparent"
+                      href='https://github.com/alvaroserrrano/fixAdvisor'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaGithub />
@@ -241,8 +243,8 @@ class TeamSection extends React.Component {
                   </Tooltip>
 
                   <Tooltip
-                    id="Live"
-                    title="Live site"
+                    id='Live'
+                    title='Live site'
                     placement={
                       typeof window !== "undefined" && window.innerWidth > 959
                         ? "bottom"
@@ -251,9 +253,9 @@ class TeamSection extends React.Component {
                     classes={{ tooltip: classes.tooltip }}
                   >
                     <Button
-                      href="https://codingblog-alvaro-serrano.netlify.com/"
-                      target="_blank"
-                      color="transparent"
+                      href='https://fixadvisor-5547f.firebaseapp.com/auth/signin'
+                      target='_blank'
+                      color='transparent'
                       className={classes.navLink}
                     >
                       <FaArchive />
