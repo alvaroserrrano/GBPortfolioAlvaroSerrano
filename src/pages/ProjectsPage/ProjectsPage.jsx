@@ -1231,6 +1231,107 @@ class ProjectsPage extends React.Component {
                                   </CardActions>
                                 </Card>
                               </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="GSN"
+                                        className={classes.avatar}
+                                      >
+                                        P
+                                      </Avatar>
+                                    }
+                                    title="GSN Model"
+                                    subheader="Goal Structuring Notation"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      GSN model implementation to validate the
+                                      truth of an argument/claim. It takes an
+                                      XML assurance case and builds a safety
+                                      pattern.
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/ArgReasonator"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
+                                        aria-label="GSN"
+                                        className={classes.avatar}
+                                      >
+                                        P
+                                      </Avatar>
+                                    }
+                                    title="Kruskal's algorithm"
+                                    subheader="Minimum Spanning Tree"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      {" "}
+                                      Construct a minimum cost spanning tree
+                                      using Kruskal’s algorithm,{" "}
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/MinSpanningTree"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
                             </Grid>
                           ),
                         },
