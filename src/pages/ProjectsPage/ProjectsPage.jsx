@@ -1548,8 +1548,8 @@ class ProjectsPage extends React.Component {
                                         C
                                       </Avatar>
                                     }
-                                    title="FixAdvisor"
-                                    subheader="Tool Booking site "
+                                    title="CodeBlog"
+                                    subheader="Coding blog"
                                   />
 
                                   <CardContent>
@@ -1560,12 +1560,11 @@ class ProjectsPage extends React.Component {
                                     >
                                       Full stack Application <br />
                                       <br />
-                                      <strong>Technologies:</strong>Node - React
-                                      - Graphql - SQL - Firebase
+                                      <strong>Technologies:</strong>Gatsby -
+                                      Graphql - Markdown
                                       <br />
                                       <br />
-                                      Validation - Filtering - Optimization -
-                                      Internationalization
+                                      Coding and Cybersecurity blog
                                     </Typography>
                                   </CardContent>
                                   <CardActions disableSpacing>
@@ -1582,7 +1581,7 @@ class ProjectsPage extends React.Component {
                                     >
                                       <IconButton
                                         aria-label="See code"
-                                        href="https://github.com/alvaroserrrano/fixAdvisor"
+                                        href="https://github.com/alvaroserrrano/CodeBlog"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                       >
@@ -1602,7 +1601,7 @@ class ProjectsPage extends React.Component {
                                     >
                                       <IconButton
                                         aria-label="Live site"
-                                        href="https://fixadvisor-5547f.firebaseapp.com/auth/signin"
+                                        href="https://codingblog-alvaro-serrano.netlify.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                       >
