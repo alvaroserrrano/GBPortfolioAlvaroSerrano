@@ -1507,8 +1507,8 @@ class ProjectsPage extends React.Component {
                             <Fragment>
                               <ListItem className={classes.listItem}>
                                 <Tooltip
-                                  id="Laravel"
-                                  title="Laravel"
+                                  id="Gatsby"
+                                  title="Gatsby"
                                   placement={
                                     typeof window !== "undefined" &&
                                     window.innerWidth > 959
@@ -1523,7 +1523,7 @@ class ProjectsPage extends React.Component {
                                     onClick={e => e.preventDefault()}
                                     color="transparent"
                                   >
-                                    <FaPhp />
+                                    <FaReact />
                                   </Button>
                                 </Tooltip>
                               </ListItem>
@@ -1537,19 +1537,19 @@ class ProjectsPage extends React.Component {
                               justify="center"
                               alignItems="center"
                             >
-                              <Grid item xs={12} sm={6}>
+                              <Grid item xs={12} sm={6} spacing={3}>
                                 <Card className={classes.card}>
                                   <CardHeader
                                     avatar={
                                       <Avatar
-                                        aria-label="FreecodeGram"
+                                        aria-label="codeBlog"
                                         className={classes.avatar}
                                       >
-                                        P
+                                        C
                                       </Avatar>
                                     }
-                                    title="Freecodegram"
-                                    subheader="Instagram clone"
+                                    title="FixAdvisor"
+                                    subheader="Tool Booking site "
                                   />
 
                                   <CardContent>
@@ -1558,9 +1558,14 @@ class ProjectsPage extends React.Component {
                                       color="textSecondary"
                                       component="p"
                                     >
-                                      Instagram clone
+                                      Full stack Application <br />
                                       <br />
-                                      Add posts, comments, likes...
+                                      <strong>Technologies:</strong>Node - React
+                                      - Graphql - SQL - Firebase
+                                      <br />
+                                      <br />
+                                      Validation - Filtering - Optimization -
+                                      Internationalization
                                     </Typography>
                                   </CardContent>
                                   <CardActions disableSpacing>
@@ -1577,11 +1582,31 @@ class ProjectsPage extends React.Component {
                                     >
                                       <IconButton
                                         aria-label="See code"
-                                        href="https://github.com/alvaroserrrano/freeCodeGram"
+                                        href="https://github.com/alvaroserrrano/fixAdvisor"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                       >
                                         <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Live site"
+                                        href="https://fixadvisor-5547f.firebaseapp.com/auth/signin"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
                                       </IconButton>
                                     </Tooltip>
                                   </CardActions>
@@ -1593,6 +1618,100 @@ class ProjectsPage extends React.Component {
                       ]}
                     />
                   </GridItem>
+                  <Grid item xs={12} sm={6}>
+                    <Card className={classes.card}>
+                      <CardHeader
+                        avatar={
+                          <Avatar
+                            aria-label="socialApes"
+                            className={classes.avatar}
+                          >
+                            S
+                          </Avatar>
+                        }
+                        title="socialApes"
+                        subheader="Social media site"
+                      />
+
+                      <CardContent>
+                        <Typography
+                          variant="body2"
+                          color="textSecondary"
+                          component="p"
+                        >
+                          Full stack Application <br />
+                          <br />
+                          <strong>Technologies:</strong>Firebase - Cloud
+                          Functions - NodeJS - ReactJS - Redux
+                          <br />
+                          <br />
+                          Create a profile, add posts, likes, comments...
+                        </Typography>
+                      </CardContent>
+                      <CardActions disableSpacing>
+                        <Tooltip
+                          id="MERN"
+                          title="Client-side code"
+                          placement={
+                            typeof window !== "undefined" &&
+                            window.innerWidth > 959
+                              ? "bottom"
+                              : "left"
+                          }
+                          classes={{ tooltip: classes.tooltip }}
+                        >
+                          <IconButton
+                            aria-label="Client side"
+                            href="https://github.com/alvaroserrrano/SocialApeClient"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FaGithub />
+                          </IconButton>
+                        </Tooltip>
+                        <Tooltip
+                          id="MERN"
+                          title="Server-side code"
+                          placement={
+                            typeof window !== "undefined" &&
+                            window.innerWidth > 959
+                              ? "bottom"
+                              : "left"
+                          }
+                          classes={{ tooltip: classes.tooltip }}
+                        >
+                          <IconButton
+                            aria-label="Server-side code"
+                            href="https://github.com/alvaroserrrano/SocialMediaApp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FaGithub />
+                          </IconButton>
+                        </Tooltip>
+                        <Tooltip
+                          id="MERN"
+                          title="Live site"
+                          placement={
+                            typeof window !== "undefined" &&
+                            window.innerWidth > 959
+                              ? "bottom"
+                              : "left"
+                          }
+                          classes={{ tooltip: classes.tooltip }}
+                        >
+                          <IconButton
+                            aria-label="Live site"
+                            href="https://socialape-44490.firebaseapp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <FaShare />
+                          </IconButton>
+                        </Tooltip>
+                      </CardActions>
+                    </Card>
+                  </Grid>
                 </GridContainer>
               </div>
             </div>
