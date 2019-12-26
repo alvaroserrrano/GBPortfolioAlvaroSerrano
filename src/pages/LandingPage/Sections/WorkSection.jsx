@@ -47,6 +47,7 @@ class WorkSection extends React.Component {
             <form
               method="POST"
               action="https://getform.io/f/0b4f916e-25b6-4810-b947-d0de5dbcca08"
+              target="_blank"
             >
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
