@@ -45,7 +45,7 @@ class WorkSection extends React.Component {
               </Tooltip>
             </h4>
             <form
-              method="post"
+              method="POST"
               action="https://getform.io/f/0b4f916e-25b6-4810-b947-d0de5dbcca08"
             >
               <GridContainer>
@@ -65,6 +65,7 @@ class WorkSection extends React.Component {
                     labelText="Your Email"
                     id="email"
                     name="email"
+                    type="email"
                     formControlProps={{
                       fullWidth: true,
                     }}

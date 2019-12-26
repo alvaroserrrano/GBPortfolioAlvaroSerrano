@@ -9,6 +9,7 @@ import {
   FaTelegram,
   FaGithub,
   FaJava,
+  FaDatabase,
   FaJsSquare,
   FaNodeJs,
   FaReact,
