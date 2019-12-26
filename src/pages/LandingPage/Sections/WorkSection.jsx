@@ -44,12 +44,13 @@ class WorkSection extends React.Component {
                 </Button>
               </Tooltip>
             </h4>
-            <form>
+            <form action="https://getform.io/f/0b4f916e-25b6-4810-b947-d0de5dbcca08">
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Your Name"
                     id="name"
+                    name="name"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -59,6 +60,7 @@ class WorkSection extends React.Component {
                   <CustomInput
                     labelText="Your Email"
                     id="email"
+                    name="email"
                     formControlProps={{
                       fullWidth: true,
                     }}
@@ -67,6 +69,7 @@ class WorkSection extends React.Component {
                 <CustomInput
                   labelText="Your Message"
                   id="message"
+                  name="message"
                   formControlProps={{
                     fullWidth: true,
                     className: classes.textArea,
