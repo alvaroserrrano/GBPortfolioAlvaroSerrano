@@ -728,6 +728,82 @@ class ProjectsPage extends React.Component {
                                   <CardHeader
                                     avatar={
                                       <Avatar
+                                        aria-label="Tours"
+                                        className={classes.avatar}
+                                      >
+                                        F2F
+                                      </Avatar>
+                                    }
+                                    title="Tours"
+                                    subheader="Full stack"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      Data fetched from Food2Fork API <br />
+                                      <br />
+                                      <strong>Technologies:</strong>HTML - CSS -
+                                      Bootstrap - ES6 - Async Javascript
+                                      <br />
+                                      <br />
+                                      Search for recipes, add to the cart, see
+                                      details, check other recipes made by that
+                                      chef...
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Live site"
+                                        href="https://alvaro-serrano-tours.herokuapp.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="API Docs"
+                                        href="https://documenter.getpostman.com/view/7417761/SVmpW1yH?version=latest"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
                                         aria-label="Food2Fork"
                                         className={classes.avatar}
                                       >
