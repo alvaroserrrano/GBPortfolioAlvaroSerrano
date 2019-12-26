@@ -12,8 +12,6 @@ import {
   FaJsSquare,
   FaNodeJs,
   FaReact,
-  FaDatabase,
-  FaPhp,
   FaShare,
 } from "react-icons/fa"
 // core components

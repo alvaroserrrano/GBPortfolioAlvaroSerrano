@@ -44,7 +44,10 @@ class WorkSection extends React.Component {
                 </Button>
               </Tooltip>
             </h4>
-            <form action="https://getform.io/f/0b4f916e-25b6-4810-b947-d0de5dbcca08">
+            <form
+              method="post"
+              action="https://getform.io/f/0b4f916e-25b6-4810-b947-d0de5dbcca08"
+            >
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
@@ -54,6 +57,7 @@ class WorkSection extends React.Component {
                     formControlProps={{
                       fullWidth: true,
                     }}
+                    white
                   />
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
@@ -64,6 +68,7 @@ class WorkSection extends React.Component {
                     formControlProps={{
                       fullWidth: true,
                     }}
+                    white
                   />
                 </GridItem>
                 <CustomInput
@@ -78,6 +83,7 @@ class WorkSection extends React.Component {
                     multiline: true,
                     rows: 5,
                   }}
+                  white
                 />
                 <GridContainer justify="center">
                   <GridItem
