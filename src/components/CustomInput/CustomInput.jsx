@@ -13,6 +13,7 @@ import customInputStyle from "assets/jss/material-kit-react/components/customInp
 
 function CustomInput({ ...props }) {
   const {
+    name,
     classes,
     formControlProps,
     labelText,
@@ -71,6 +72,7 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         {...inputProps}
+        name={name}
       />
     </FormControl>
   )

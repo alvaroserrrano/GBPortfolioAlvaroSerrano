@@ -44,22 +44,35 @@ class WorkSection extends React.Component {
                 </Button>
               </Tooltip>
             </h4>
+
             <form
               method="POST"
               action="https://getform.io/f/0b4f916e-25b6-4810-b947-d0de5dbcca08"
               target="_blank"
+              noValidate
+              autoComplete="off"
             >
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
+                    type="text"
                     labelText="Your Name"
                     id="name"
                     name="name"
                     formControlProps={{
                       fullWidth: true,
                     }}
-                    white
-                  />
+                    inputRootCustomClasses
+                    name="name"
+                  >
+                    {/* <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Your name"
+                  /> */}
+                  </CustomInput>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
@@ -70,10 +83,20 @@ class WorkSection extends React.Component {
                     formControlProps={{
                       fullWidth: true,
                     }}
-                    white
-                  />
+                    inputRootCustomClasses
+                    name="email"
+                  >
+                    {/* <input
+                    type="email"
+                    name="email"
+                    required
+                    id="email"
+                    placeholder="Your email"
+                  /> */}
+                  </CustomInput>
                 </GridItem>
                 <CustomInput
+                  type="text"
                   labelText="Your Message"
                   id="message"
                   name="message"
@@ -85,8 +108,17 @@ class WorkSection extends React.Component {
                     multiline: true,
                     rows: 5,
                   }}
-                  white
-                />
+                  inputRootCustomClasses
+                  name="text"
+                >
+                  {/* <input
+                  type="text"
+                  name="message"
+                  id="message"
+                  required
+                  placeholder="Your message"
+                /> */}
+                </CustomInput>
                 <GridContainer justify="center">
                   <GridItem
                     xs={12}
