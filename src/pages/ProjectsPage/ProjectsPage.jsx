@@ -1068,6 +1068,75 @@ class ProjectsPage extends React.Component {
                                   <CardHeader
                                     avatar={
                                       <Avatar
+                                        aria-label="News Reporter"
+                                        className={classes.avatar}
+                                      >
+                                        BR
+                                      </Avatar>
+                                    }
+                                    title="News Reporter"
+                                    subheader="Hacker News"
+                                  />
+
+                                  <CardContent>
+                                    <Typography
+                                      variant="body2"
+                                      color="textSecondary"
+                                      component="p"
+                                    >
+                                      React + Styled Components + hackerNewsAPI
+                                      + React Testing Library
+                                    </Typography>
+                                  </CardContent>
+                                  <CardActions disableSpacing>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="See code"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="See code"
+                                        href="https://github.com/alvaroserrrano/newsReporter"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaGithub />
+                                      </IconButton>
+                                    </Tooltip>
+                                    <Tooltip
+                                      id="MERN"
+                                      title="Live site"
+                                      placement={
+                                        typeof window !== "undefined" &&
+                                        window.innerWidth > 959
+                                          ? "bottom"
+                                          : "left"
+                                      }
+                                      classes={{ tooltip: classes.tooltip }}
+                                    >
+                                      <IconButton
+                                        aria-label="Live site"
+                                        href="https://newsreporter-alvaro-serrano.netlify.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <FaShare />
+                                      </IconButton>
+                                    </Tooltip>
+                                  </CardActions>
+                                </Card>
+                              </Grid>
+                              <Grid item xs={12} sm={6}>
+                                <Card className={classes.card}>
+                                  <CardHeader
+                                    avatar={
+                                      <Avatar
                                         aria-label="Ecommerce"
                                         className={classes.avatar}
                                       >
