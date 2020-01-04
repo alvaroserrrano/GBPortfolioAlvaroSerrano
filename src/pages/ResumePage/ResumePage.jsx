@@ -40,7 +40,7 @@ import django from "assets/img/django.png"
 import mongo from "assets/img/mongo.jpeg"
 import postgre from "assets/img/postgre.png"
 import node from "assets/img/node.png"
-import kali from "assets/img/kali.png"
+import graphql from "assets/img/graphql.png"
 import git from "assets/img/git.gif"
 import resumePageStyle from "assets/jss/material-kit-react/views/resumePage.jsx"
 
@@ -273,7 +273,7 @@ class ProfilePage extends React.Component {
                               />
                               <img
                                 alt="..."
-                                src={kali}
+                                src={graphql}
                                 className={navImageClasses}
                               />
                             </GridItem>

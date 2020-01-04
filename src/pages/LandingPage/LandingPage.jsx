@@ -8,6 +8,7 @@ import withStyles from "@material-ui/core/styles/withStyles"
 
 // React icons
 import { FaLinkedin } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
 // core components
 import Header from "components/Header/Header.jsx"
@@ -49,8 +50,6 @@ class LandingPage extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Full Stack Web Developer</h1>
-                {/* #57BFC7 */}
-                {/* #D1366D */}
                 <h4 style={{ color: "#00b200" }}>
                   <strong>
                     Computer Science Student at College of Engineering and
@@ -67,6 +66,16 @@ class LandingPage extends React.Component {
                 >
                   <FaLinkedin />
                   Stay tuned
+                </Button>
+                <Button color="github" href="https://github.com/alvaroserrrano">
+                  <FaGithub /> Connect with Github
+                </Button>
+                <Button
+                  color="github"
+                  justIcon
+                  href="https://github.com/alvaroserrrano"
+                >
+                  <FaGithub />
                 </Button>
               </GridItem>
             </GridContainer>

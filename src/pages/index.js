@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { createMemoryHistory } from "history"
 import { Route, Router, Switch } from "react-router-dom"
 
@@ -9,6 +9,7 @@ import "typeface-roboto-slab"
 import LandingPage from "./LandingPage/LandingPage.jsx"
 import ResumePage from "./ResumePage/ResumePage.jsx"
 import ProjectsPage from "./ProjectsPage/ProjectsPage.jsx"
+import Components from "./Components/Components.jsx"
 
 let hist = createMemoryHistory()
 
